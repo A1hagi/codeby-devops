@@ -1,1 +1,7 @@
+branch_b
+branch_c
+Content from C
+Content from B
+branch_b
 Content from A
+branch_a
