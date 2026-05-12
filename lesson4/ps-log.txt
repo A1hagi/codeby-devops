@@ -1,0 +1,1135 @@
+Script started on 2026-05-12 22:22:41+03:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="135" LINES="58"]
+[?2004hroot@debian-lesson4:~/codeby-devops/lesson4# [7mps aux[27mps aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.6 168404 12336 ?        Ss   20:52   0:07 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    20:52   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   20:52   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   20:52   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   20:52   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   20:52   0:00 [netns]
+root          10  0.0  0.0      0     0 ?        I<   20:52   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        I    20:52   0:00 [rcu_tasks_kthread]
+root          12  0.0  0.0      0     0 ?        I    20:52   0:00 [rcu_tasks_rude_kthread]
+root          13  0.0  0.0      0     0 ?        I    20:52   0:00 [rcu_tasks_trace_kthread]
+root          14  0.0  0.0      0     0 ?        S    20:52   0:01 [ksoftirqd/0]
+root          15  0.0  0.0      0     0 ?        I    20:52   0:01 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    20:52   0:00 [migration/0]
+root          18  0.0  0.0      0     0 ?        S    20:52   0:00 [cpuhp/0]
+root          20  0.0  0.0      0     0 ?        S    20:52   0:00 [kdevtmpfs]
+root          21  0.0  0.0      0     0 ?        I<   20:52   0:00 [inet_frag_wq]
+root          22  0.0  0.0      0     0 ?        S    20:52   0:00 [kauditd]
+root          23  0.0  0.0      0     0 ?        S    20:52   0:00 [khungtaskd]
+root          24  0.0  0.0      0     0 ?        S    20:52   0:00 [oom_reaper]
+root          27  0.0  0.0      0     0 ?        I<   20:52   0:00 [writeback]
+root          28  0.0  0.0      0     0 ?        S    20:52   0:01 [kcompactd0]
+root          29  0.0  0.0      0     0 ?        SN   20:52   0:00 [ksmd]
+root          30  0.0  0.0      0     0 ?        SN   20:52   0:00 [khugepaged]
+root          31  0.0  0.0      0     0 ?        I<   20:52   0:00 [kintegrityd]
+root          32  0.0  0.0      0     0 ?        I<   20:52   0:00 [kblockd]
+root          33  0.0  0.0      0     0 ?        I<   20:52   0:00 [blkcg_punt_bio]
+root          34  0.0  0.0      0     0 ?        I<   20:52   0:00 [tpm_dev_wq]
+root          35  0.0  0.0      0     0 ?        I<   20:52   0:00 [edac-poller]
+root          36  0.0  0.0      0     0 ?        I<   20:52   0:00 [devfreq_wq]
+root          37  0.0  0.0      0     0 ?        I<   20:52   0:01 [kworker/0:1H-kblockd]
+root          38  0.0  0.0      0     0 ?        S    20:52   0:01 [kswapd0]
+root          44  0.0  0.0      0     0 ?        I<   20:52   0:00 [kthrotld]
+root          46  0.0  0.0      0     0 ?        I<   20:52   0:00 [acpi_thermal_pm]
+root          48  0.0  0.0      0     0 ?        I<   20:52   0:00 [mld]
+root          49  0.0  0.0      0     0 ?        I<   20:52   0:00 [ipv6_addrconf]
+root          54  0.0  0.0      0     0 ?        I<   20:52   0:00 [kstrp]
+root          59  0.0  0.0      0     0 ?        I<   20:52   0:00 [zswap-shrink]
+root          60  0.0  0.0      0     0 ?        I<   20:52   0:00 [kworker/u3:0]
+root         125  0.0  0.0      0     0 ?        I<   20:52   0:00 [ata_sff]
+root         126  0.0  0.0      0     0 ?        S    20:52   0:00 [scsi_eh_0]
+root         127  0.0  0.0      0     0 ?        I<   20:52   0:00 [scsi_tmf_0]
+root         128  0.0  0.0      0     0 ?        S    20:52   0:00 [scsi_eh_1]
+root         129  0.0  0.0      0     0 ?        I<   20:52   0:00 [scsi_tmf_1]
+root         131  0.0  0.0      0     0 ?        S    20:52   0:00 [scsi_eh_2]
+root         132  0.0  0.0      0     0 ?        I<   20:52   0:00 [scsi_tmf_2]
+root         138  0.0  0.0      0     0 ?        S    20:52   0:00 [irq/18-vmwgfx]
+root         139  0.0  0.0      0     0 ?        I<   20:52   0:00 [kworker/0:2H-kblockd]
+root         178  0.0  0.0      0     0 ?        S    20:52   0:00 [jbd2/sda1-8]
+root         179  0.0  0.0      0     0 ?        I<   20:52   0:00 [ext4-rsv-conver]
+root         226  0.0  0.8  49924 16780 ?        Ss   20:52   0:00 /lib/systemd/systemd-journald
+root         248  0.0  0.3  28472  6940 ?        Ss   20:52   0:00 /lib/systemd/systemd-udevd
+root         319  0.0  0.0      0     0 ?        I<   20:52   0:00 [cryptd]
+root         345  0.0  0.0      0     0 ?        I<   20:52   0:00 [iprt-VBoxWQueue]
+root         438  0.0  0.4 236908  9212 ?        Ssl  20:52   0:00 /usr/libexec/accounts-daemon
+avahi        449  0.0  0.1   8300  3556 ?        Ss   20:52   0:00 avahi-daemon: running [debisn.local]
+root         455  0.0  0.1   6616  2756 ?        Ss   20:52   0:00 /usr/sbin/cron -f
+message+     458  0.0  0.6  17928 12316 ?        Ss   20:52   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfil
+root         466  0.0  0.2 230032  5728 ?        SLsl 20:52   0:00 /usr/libexec/low-memory-monitor
+polkitd      472  0.0  0.5 314348 11508 ?        Ssl  20:52   0:01 /usr/lib/polkit-1/polkitd --no-debug
+root         473  0.0  0.3 237004  6488 ?        Ssl  20:52   0:00 /usr/libexec/power-profiles-daemon
+root         478  0.0  0.3 233388  6112 ?        Ssl  20:52   0:00 /usr/libexec/switcheroo-control
+root         480  0.0  0.3  25376  7664 ?        Ss   20:52   0:00 /lib/systemd/systemd-logind
+root         483  0.0  0.6 394852 13008 ?        Ssl  20:52   0:00 /usr/libexec/udisks2/udisksd
+root         491  0.0  0.0      0     0 ?        S    20:52   0:00 [psimon]
+avahi        497  0.0  0.0   8112   324 ?        S    20:52   0:00 avahi-daemon: chroot helper
+root         505  0.0  0.8 258556 18080 ?        Ssl  20:52   0:03 /usr/sbin/NetworkManager --no-daemon
+root         519  0.0  0.2  16552  4732 ?        Ss   20:52   0:00 /sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root         535  0.0  0.4 317336  9716 ?        Ssl  20:52   0:00 /usr/sbin/ModemManager
+root         550  0.0  0.4  27068  8192 ?        Ss   20:52   0:00 /usr/sbin/cupsd -l
+root         712  0.0  0.5 176252 11724 ?        Ssl  20:52   0:00 /usr/sbin/cups-browsed
+root         721  0.0  0.4 240368  8136 ?        Ssl  20:52   0:00 /usr/sbin/gdm3
+rtkit        779  0.0  0.0  22708  1492 ?        SNsl 20:52   0:00 /usr/libexec/rtkit-daemon
+root         891  0.0  0.3 233768  6156 ?        Ssl  20:52   0:00 /usr/libexec/upowerd
+colord       927  0.0  0.4 242336  9860 ?        Ssl  20:52   0:00 /usr/libexec/colord
+root        1173  0.0  0.4 165356  8116 ?        Sl   20:53   0:00 gdm-session-worker [pam/gdm-password]
+user        1187  0.0  0.5  19772 10740 ?        Ss   20:53   0:00 /lib/systemd/systemd --user
+user        1190  0.0  0.0 103592  1736 ?        S    20:53   0:00 (sd-pam)
+user        1205  0.0  0.6  55532 13436 ?        S<sl 20:53   0:00 /usr/bin/pipewire
+user        1211  0.0  0.7 257228 14204 ?        S<sl 20:53   0:00 /usr/bin/wireplumber
+user        1215  0.0  0.5  34996 11680 ?        S<sl 20:53   0:00 /usr/bin/pipewire-pulse
+user        1216  0.0  0.4 239916  8256 ?        SLsl 20:53   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secre
+user        1219  0.0  0.2  10224  5252 ?        Ss   20:53   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfi
+user        1231  0.0  0.3 237524  6700 ?        Ssl  20:53   0:00 /usr/libexec/gvfsd
+user        1237  0.0  0.2 159292  5256 tty2     Ssl+ 20:53   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session
+user        1241  0.0  0.8 297964 16368 tty2     Sl+  20:53   0:00 /usr/libexec/gnome-session-binary
+user        1316  0.0  0.3 380384  7868 ?        Sl   20:53   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+user        1328  0.0  0.2  88392  5056 ?        Ssl  20:53   0:00 /usr/libexec/gcr-ssh-agent /run/user/1000/gcr
+user        1330  0.0  0.2  88840  4612 ?        Ssl  20:53   0:00 /usr/libexec/gnome-session-ctl --monitor
+user        1331  0.0  0.2   7836  4592 ?        Ss   20:53   0:00 ssh-agent -D -a /run/user/1000/openssh_agent
+user        1341  0.0  0.9 593712 18264 ?        Ssl  20:53   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=gnome
+user        1359  0.0  0.3 311212  6824 ?        Sl   20:53   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+user        1360  3.3 13.8 3423692 279192 ?      Ssl  20:53   2:59 /usr/bin/gnome-shell
+user        1366  0.0  0.2   9132  4232 ?        S    20:53   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/acces
+user        1406  0.0  0.2 236712  4804 ?        Ssl  20:53   0:00 /usr/libexec/xdg-permission-store
+user        1408  0.0  0.5 581008 10500 ?        Sl   20:53   0:00 /usr/libexec/gnome-shell-calendar-server
+user        1417  0.0  1.6 1024124 32656 ?       Ssl  20:53   0:00 /usr/libexec/evolution-source-registry
+user        1430  0.0  0.5 499116 12072 ?        Ssl  20:53   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+user        1435  0.0  0.4 312444  8860 ?        Ssl  20:53   0:00 /usr/libexec/gvfs-afc-volume-monitor
+user        1444  0.0  0.2 234324  5792 ?        Ssl  20:53   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+user        1445  0.0  0.8 884800 17720 ?        Sl   20:53   0:00 /usr/libexec/goa-daemon
+user        1449  0.0  0.2 233368  5772 ?        Ssl  20:53   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+user        1452  0.0  0.9 683532 18788 ?        Ssl  20:53   0:00 /usr/libexec/evolution-calendar-factory
+user        1458  0.0  0.2 233532  5636 ?        Ssl  20:53   0:00 /usr/libexec/gvfs-goa-volume-monitor
+user        1467  0.0  0.9 678272 19528 ?        Ssl  20:53   0:00 /usr/libexec/evolution-addressbook-factory
+user        1489  0.0  0.4 312584  9528 ?        Sl   20:53   0:00 /usr/libexec/goa-identity-service
+user        1497  0.0  0.4 164332  8688 ?        Sl   20:53   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+user        1498  0.0  1.1 2452788 23120 ?       Sl   20:53   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+user        1506  0.0  0.0   2584   696 ?        Ss   20:53   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" =
+user        1507  0.0  0.2 307344  5648 ?        Ssl  20:53   0:00 /usr/libexec/gsd-a11y-settings
+user        1508  0.0  1.0 339816 21932 ?        Ssl  20:53   0:00 /usr/libexec/gsd-color
+user        1510  0.0  0.5 355236 10424 ?        Ssl  20:53   0:00 /usr/libexec/gsd-datetime
+user        1517  0.0  0.3 382640  6728 ?        Ssl  20:53   0:00 /usr/libexec/gsd-housekeeping
+user        1518  0.0  0.9 338632 19272 ?        Ssl  20:53   0:00 /usr/libexec/gsd-keyboard
+user        1522  0.0  1.1 668156 23684 ?        Ssl  20:53   0:00 /usr/libexec/gsd-media-keys
+user        1523  0.0  1.1 376400 24064 ?        Ssl  20:53   0:00 /usr/libexec/gsd-power
+user        1524  0.0  0.5 247224 11412 ?        Ssl  20:53   0:00 /usr/libexec/gsd-print-notifications
+user        1526  0.0  0.3 454772  6996 ?        Ssl  20:53   0:00 /usr/libexec/gsd-rfkill
+user        1528  0.0  0.2 233188  5796 ?        Ssl  20:53   0:00 /usr/libexec/gsd-screensaver-proxy
+user        1529  0.0  0.4 463248 10032 ?        Ssl  20:53   0:00 /usr/libexec/gsd-sharing
+user        1530  0.0  0.2 385564  4908 ?        Ssl  20:53   0:00 /usr/libexec/gsd-smartcard
+user        1533  0.0  0.4 319356  9248 ?        Ssl  20:53   0:00 /usr/libexec/gsd-sound
+user        1535  0.0  0.4 455884  8656 ?        Ssl  20:53   0:00 /usr/libexec/gsd-usb-protection
+user        1536  0.0  1.0 339320 21884 ?        Ssl  20:53   0:00 /usr/libexec/gsd-wacom
+user        1541  0.0  0.2 231796  5644 ?        Sl   20:53   0:00 /usr/libexec/gsd-disk-utility-notify
+user        1542  0.0  0.5 386952 11668 ?        Sl   20:53   0:02 /usr/bin/ibus-daemon --panel disable
+user        1551  0.0  2.3 1064452 47192 ?       Sl   20:53   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+user        1553  0.4 10.1 814164 205324 ?       Sl   20:53   0:21 /usr/bin/gnome-software --gapplication-service
+user        1630  0.0  1.1 2452732 23480 ?       Sl   20:53   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+user        1660  0.0  0.7 341916 15384 ?        Sl   20:53   0:00 /usr/libexec/gsd-printer
+user        1685  0.0  0.3 234204  6196 ?        Sl   20:53   0:00 /usr/libexec/ibus-dconf
+user        1686  0.0  1.2 344616 24836 ?        Sl   20:53   0:03 /usr/libexec/ibus-extension-gtk3
+user        1688  0.0  0.4 234172 10016 ?        Sl   20:53   0:00 /usr/libexec/ibus-portal
+user        1709  0.0  1.1 231532 23840 ?        S    20:53   0:03 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/us
+user        1726  0.0  0.3 160368  6424 ?        Sl   20:53   0:00 /usr/libexec/ibus-engine-simple
+user        1735  0.0  0.7 621572 14508 ?        Ssl  20:53   0:00 /usr/libexec/xdg-desktop-portal
+user        1740  0.0  0.4 534084  8304 ?        Ssl  20:53   0:00 /usr/libexec/xdg-document-portal
+root        1749  0.0  0.0   2488   836 ?        Ss   20:53   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=po
+user        1755  0.0  1.1 377104 22256 ?        Ssl  20:53   0:00 /usr/libexec/xdg-desktop-portal-gnome
+user        1780  0.0  2.2 548188 45920 ?        Ssl  20:53   0:00 /usr/libexec/gsd-xsettings
+user        1806  0.0  1.0 190220 20680 ?        Sl   20:53   0:00 /usr/libexec/ibus-x11
+user        1811  0.0  2.4 707616 49900 ?        SNsl 20:53   0:01 /usr/libexec/tracker-miner-fs-3
+user        1824  0.0  0.0  18700    36 ?        S    20:53   0:00 /usr/bin/VBoxClient --clipboard
+user        1825  0.0  2.6 226104 53564 ?        Sl   20:53   0:00 /usr/bin/VBoxClient --clipboard
+user        1845  0.0  1.1 339764 22680 ?        Ssl  20:53   0:00 /usr/libexec/xdg-desktop-portal-gtk
+user        1851  0.0  0.0  18700    24 ?        S    20:53   0:00 /usr/bin/VBoxClient --vmsvga-session
+user        1852  0.0  0.0 154588  1320 ?        Sl   20:53   0:00 /usr/bin/VBoxClient --vmsvga-session
+user        2111  0.0  0.3 159924  6088 ?        Ssl  20:54   0:00 /usr/libexec/gvfsd-metadata
+user        2137  0.0  0.2 156332  5584 ?        Ssl  20:54   0:00 /usr/libexec/dconf-service
+root       39012  0.0  0.1 352832  3028 ?        Sl   21:05   0:03 /usr/bin/VBoxDRMClient
+root       39015  0.0  0.1 293464  3116 ?        Sl   21:05   0:03 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+root       39046  0.0  0.1 152260  2688 ?        Sl   21:05   0:00 /opt/VBoxGuestAdditions-7.2.8/sbin/VBoxService --utf8-argv guestsess
+root       40571  0.0  0.4  15452  9436 ?        Ss   21:21   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       41285  0.0  0.0      0     0 ?        I    21:36   0:00 [kworker/u2:1-flush-8:0]
+root       41319  0.0  0.0      0     0 ?        I    21:43   0:01 [kworker/0:3-events]
+root       41754  0.0  0.5  17808 10980 ?        Ss   22:11   0:00 sshd: user [priv]
+user       41791  0.0  0.3  18068  6992 ?        S    22:11   0:00 sshd: user@pts/0
+user       41792  0.0  0.2   8244  5108 pts/0    Ss   22:11   0:00 -bash
+root       41822  0.0  0.2  10352  4996 pts/0    S+   22:16   0:00 sudo -i
+root       41823  0.0  0.0  10352   556 pts/1    Ss   22:16   0:00 sudo -i
+root       41824  0.0  0.2   8248  5084 pts/1    S    22:16   0:00 -bash
+root       41828  0.0  0.0      0     0 ?        I    22:16   0:00 [kworker/u2:2-events_unbound]
+root       41831  0.0  0.0      0     0 ?        I    22:16   0:00 [kworker/0:2-ata_sff]
+root       41849  0.0  0.0      0     0 ?        I    22:21   0:00 [kworker/0:0-ata_sff]
+root       41851  0.0  0.0   5504  1048 pts/1    S+   22:22   0:00 script ps-log.txt
+root       41852  0.0  0.1   7204  3908 pts/2    Ss   22:22   0:00 bash -i
+root       41854  0.0  0.2  11224  4824 pts/2    R+   22:22   0:00 ps aux
+[?2004hroot@debian-lesson4:~/codeby-devops/lesson4# [7mps -u root[27mps -u root
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:07 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      5 ?        00:00:00 slub_flushwq
+      6 ?        00:00:00 netns
+     10 ?        00:00:00 mm_percpu_wq
+     11 ?        00:00:00 rcu_tasks_kthread
+     12 ?        00:00:00 rcu_tasks_rude_kthread
+     13 ?        00:00:00 rcu_tasks_trace_kthread
+     14 ?        00:00:01 ksoftirqd/0
+     15 ?        00:00:01 rcu_preempt
+     16 ?        00:00:00 migration/0
+     18 ?        00:00:00 cpuhp/0
+     20 ?        00:00:00 kdevtmpfs
+     21 ?        00:00:00 inet_frag_wq
+     22 ?        00:00:00 kauditd
+     23 ?        00:00:00 khungtaskd
+     24 ?        00:00:00 oom_reaper
+     27 ?        00:00:00 writeback
+     28 ?        00:00:01 kcompactd0
+     29 ?        00:00:00 ksmd
+     30 ?        00:00:00 khugepaged
+     31 ?        00:00:00 kintegrityd
+     32 ?        00:00:00 kblockd
+     33 ?        00:00:00 blkcg_punt_bio
+     34 ?        00:00:00 tpm_dev_wq
+     35 ?        00:00:00 edac-poller
+     36 ?        00:00:00 devfreq_wq
+     37 ?        00:00:01 kworker/0:1H-kblockd
+     38 ?        00:00:01 kswapd0
+     44 ?        00:00:00 kthrotld
+     46 ?        00:00:00 acpi_thermal_pm
+     48 ?        00:00:00 mld
+     49 ?        00:00:00 ipv6_addrconf
+     54 ?        00:00:00 kstrp
+     59 ?        00:00:00 zswap-shrink
+     60 ?        00:00:00 kworker/u3:0
+    125 ?        00:00:00 ata_sff
+    126 ?        00:00:00 scsi_eh_0
+    127 ?        00:00:00 scsi_tmf_0
+    128 ?        00:00:00 scsi_eh_1
+    129 ?        00:00:00 scsi_tmf_1
+    131 ?        00:00:00 scsi_eh_2
+    132 ?        00:00:00 scsi_tmf_2
+    138 ?        00:00:00 irq/18-vmwgfx
+    139 ?        00:00:00 kworker/0:2H-kblockd
+    178 ?        00:00:00 jbd2/sda1-8
+    179 ?        00:00:00 ext4-rsv-conver
+    226 ?        00:00:00 systemd-journal
+    248 ?        00:00:00 systemd-udevd
+    319 ?        00:00:00 cryptd
+    345 ?        00:00:00 iprt-VBoxWQueue
+    438 ?        00:00:00 accounts-daemon
+    455 ?        00:00:00 cron
+    466 ?        00:00:00 low-memory-moni
+    473 ?        00:00:00 power-profiles-
+    478 ?        00:00:00 switcheroo-cont
+    480 ?        00:00:00 systemd-logind
+    483 ?        00:00:00 udisksd
+    491 ?        00:00:00 psimon
+    505 ?        00:00:03 NetworkManager
+    519 ?        00:00:00 wpa_supplicant
+    535 ?        00:00:00 ModemManager
+    550 ?        00:00:00 cupsd
+    712 ?        00:00:00 cups-browsed
+    721 ?        00:00:00 gdm3
+    891 ?        00:00:00 upowerd
+   1173 ?        00:00:00 gdm-session-wor
+   1749 ?        00:00:00 fusermount3
+  39012 ?        00:00:03 VBoxDRMClient
+  39015 ?        00:00:03 VBoxService
+  39046 ?        00:00:00 VBoxService
+  40571 ?        00:00:00 sshd
+  41285 ?        00:00:00 kworker/u2:1-flush-8:0
+  41319 ?        00:00:01 kworker/0:3-mm_percpu_wq
+  41754 ?        00:00:00 sshd
+  41822 pts/0    00:00:00 sudo
+  41823 pts/1    00:00:00 sudo
+  41824 pts/1    00:00:00 bash
+  41828 ?        00:00:00 kworker/u2:2-events_unbound
+  41831 ?        00:00:00 kworker/0:2-ata_sff
+  41849 ?        00:00:00 kworker/0:0-ata_sff
+  41851 pts/1    00:00:00 script
+  41852 pts/2    00:00:00 bash
+  41855 pts/2    00:00:00 ps
+[?2004hroot@debian-lesson4:~/codeby-devops/lesson4# [7mtop -b -n 5 &[27mtop -b -n 5 &
+[?2004l[1] 41856
+[?2004hroot@debian-lesson4:~/codeby-devops/lesson4# top - 22:23:15 up  1:30,  3 users,  load average: 0.04, 0.03, 0.04
+Tasks: 166 total,   1 running, 165 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,100.0 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   1967.3 total,     90.3 free,   1198.2 used,    864.2 buff/cache     
+MiB Swap:    975.0 total,    726.3 free,    248.6 used.    769.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  41856 root      20   0   11604   5364   3312 R   6.2   0.3   0:00.02 top
+      1 root      20   0  168404  12336   8660 S   0.0   0.6   0:07.70 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     14 root      20   0       0      0      0 S   0.0   0.0   0:01.12 ksoftirqd/0
+     15 root      20   0       0      0      0 I   0.0   0.0   0:01.64 rcu_preempt
+     16 root      rt   0       0      0      0 S   0.0   0.0   0:00.04 migration/0
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     21 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     27 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     28 root      20   0       0      0      0 S   0.0   0.0   0:01.20 kcompactd0
+     29 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     30 root      39  19       0      0      0 S   0.0   0.0   0:00.57 khugepaged
+     31 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     32 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     33 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     34 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     35 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     36 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     37 root       0 -20       0      0      0 I   0.0   0.0   0:01.43 kworker/0:1H-kblockd
+     38 root      20   0       0      0      0 S   0.0   0.0   0:01.72 kswapd0
+     44 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     46 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 acpi_thermal_pm
+     48 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mld
+     49 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
+     54 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+     59 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 zswap-shrink
+     60 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u3:0
+    125 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+    126 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_0
+    127 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_0
+    128 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_1
+    129 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
+    131 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_2
+    132 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_2
+    138 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/18-vmwgfx
+    139 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:2H-kblockd
+    178 root      20   0       0      0      0 S   0.0   0.0   0:00.28 jbd2/sda1-8
+    179 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    226 root      20   0   49924  16780  15964 S   0.0   0.8   0:00.68 systemd-journal
+    248 root      20   0   28472   6940   4448 S   0.0   0.3   0:00.24 systemd-udevd
+    319 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    345 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 iprt-VBoxWQueue
+    438 root      20   0  236908   9212   6620 S   0.0   0.5   0:00.18 accounts-daemon
+    449 avahi     20   0    8300   3556   3196 S   0.0   0.2   0:00.41 avahi-daemon
+    455 root      20   0    6616   2756   2508 S   0.0   0.1   0:00.01 cron
+    458 message+  20   0   17928  12316   3924 S   0.0   0.6   0:03.93 dbus-daemon
+    466 root      -2   0  230032   5728   5228 S   0.0   0.3   0:00.03 low-memory-moni
+    472 polkitd   20   0  314348  11508   7548 S   0.0   0.6   0:01.06 polkitd
+    473 root      20   0  237004   6488   6172 S   0.0   0.3   0:00.04 power-profiles-
+    478 root      20   0  233388   6112   5812 S   0.0   0.3   0:00.03 switcheroo-cont
+    480 root      20   0   25376   7664   6712 S   0.0   0.4   0:00.60 systemd-logind
+    483 root      20   0  394852  13008   9232 S   0.0   0.6   0:00.59 udisksd
+    491 root      -2   0       0      0      0 S   0.0   0.0   0:00.04 psimon
+    497 avahi     20   0    8112    324      0 S   0.0   0.0   0:00.00 avahi-daemon
+    505 root      20   0  258556  18080  13860 S   0.0   0.9   0:03.26 NetworkManager
+    519 root      20   0   16552   4732   3888 S   0.0   0.2   0:00.04 wpa_supplicant
+    535 root      20   0  317336   9716   8112 S   0.0   0.5   0:00.10 ModemManager
+    550 root      20   0   27068   8192   6752 S   0.0   0.4   0:00.02 cupsd
+    712 root      20   0  176252  11724  10376 S   0.0   0.6   0:00.05 cups-browsed
+    721 root      20   0  240368   8136   7488 S   0.0   0.4   0:00.03 gdm3
+    779 rtkit     21   1   22708   1492   1252 S   0.0   0.1   0:00.07 rtkit-daemon
+    891 root      20   0  233768   6156   5756 S   0.0   0.3   0:00.07 upowerd
+    927 colord    20   0  242336   9860   7592 S   0.0   0.5   0:00.16 colord
+   1173 root      20   0  165356   8116   7612 S   0.0   0.4   0:00.10 gdm-session-wor
+   1187 user      20   0   19772  10740   8304 S   0.0   0.5   0:00.54 systemd
+   1190 user      20   0  103592   1736      0 S   0.0   0.1   0:00.00 (sd-pam)
+   1205 user       9 -11   55532  13436   7664 S   0.0   0.7   0:00.78 pipewire
+   1211 user       9 -11  257228  14204   9888 S   0.0   0.7   0:00.77 wireplumber
+   1215 user       9 -11   34996  11680   7328 S   0.0   0.6   0:00.47 pipewire-pulse
+   1216 user      20   0  239916   8256   7820 S   0.0   0.4   0:00.05 gnome-keyring-d
+   1219 user      20   0   10224   5252   3968 S   0.0   0.3   0:00.44 dbus-daemon
+   1231 user      20   0  237524   6700   6356 S   0.0   0.3   0:00.03 gvfsd
+   1237 user      20   0  159292   5256   5256 S   0.0   0.3   0:00.01 gdm-wayland-ses
+   1241 user      20   0  297964  16368  12584 S   0.0   0.8   0:00.04 gnome-session-b
+   1316 user      20   0  380384   7868   5176 S   0.0   0.4   0:00.01 gvfsd-fuse
+   1328 user      20   0   88392   5056   4420 S   0.0   0.3   0:00.00 gcr-ssh-agent
+   1330 user      20   0   88840   4612   4612 S   0.0   0.2   0:00.00 gnome-session-c
+   1331 user      20   0    7836   4592   3944 S   0.0   0.2   0:00.00 ssh-agent
+   1341 user      20   0  593712  18264  13176 S   0.0   0.9   0:00.14 gnome-session-b
+   1359 user      20   0  311212   6824   6608 S   0.0   0.3   0:00.01 at-spi-bus-laun
+   1360 user      20   0 3423692 279196  73868 S   0.0  13.9   2:59.61 gnome-shell
+   1366 user      20   0    9132   4232   3980 S   0.0   0.2   0:00.01 dbus-daemon
+   1406 user      20   0  236712   4804   4748 S   0.0   0.2   0:00.00 xdg-permission-
+   1408 user      20   0  581008  10500  10500 S   0.0   0.5   0:00.08 gnome-shell-cal
+   1417 user      20   0 1024124  32656  18140 S   0.0   1.6   0:00.38 evolution-sourc
+   1430 user      20   0  499116  12072   8544 S   0.0   0.6   0:00.58 gvfs-udisks2-vo
+   1435 user      20   0  312444   8860   6508 S   0.0   0.4   0:00.33 gvfs-afc-volume
+   1444 user      20   0  234324   5792   5616 S   0.0   0.3   0:00.01 gvfs-gphoto2-vo
+   1445 user      20   0  884800  17720  13232 S   0.0   0.9   0:00.17 goa-daemon
+   1449 user      20   0  233368   5772   5436 S   0.0   0.3   0:00.01 gvfs-mtp-volume
+   1452 user      20   0  683532  18788  13612 S   0.0   0.9   0:00.10 evolution-calen
+   1458 user      20   0  233532   5636   5424 S   0.0   0.3   0:00.01 gvfs-goa-volume
+   1467 user      20   0  678272  19528  15440 S   0.0   1.0   0:00.07 evolution-addre
+   1489 user      20   0  312584   9528   6452 S   0.0   0.5   0:00.12 goa-identity-se
+   1497 user      20   0  164332   8688   6420 S   0.0   0.4   0:00.02 at-spi2-registr
+   1498 user      20   0 2452788  23120  14316 S   0.0   1.1   0:00.08 gjs
+   1506 user      20   0    2584    696    696 S   0.0   0.0   0:00.00 sh
+   1507 user      20   0  307344   5648   5420 S   0.0   0.3   0:00.00 gsd-a11y-settin
+   1508 user      20   0  339816  21932  16184 S   0.0   1.1   0:00.15 gsd-color
+   1510 user      20   0  355236  10424   8152 S   0.0   0.5   0:00.02 gsd-datetime
+   1517 user      20   0  382640   6728   6256 S   0.0   0.3   0:00.23 gsd-housekeepin
+   1518 user      20   0  338632  19272  15592 S   0.0   1.0   0:00.12 gsd-keyboard
+   1522 user      20   0  668156  23684  17036 S   0.0   1.2   0:00.24 gsd-media-keys
+   1523 user      20   0  376400  24064  17396 S   0.0   1.2   0:00.18 gsd-power
+   1524 user      20   0  247224  11412   9196 S   0.0   0.6   0:00.02 gsd-print-notif
+   1526 user      20   0  454772   6996   5092 S   0.0   0.3   0:00.01 gsd-rfkill
+   1528 user      20   0  233188   5796   5612 S   0.0   0.3   0:00.00 gsd-screensaver
+   1529 user      20   0  463248  10032   7252 S   0.0   0.5   0:00.02 gsd-sharing
+   1530 user      20   0  385564   4908   4552 S   0.0   0.2   0:00.02 gsd-smartcard
+   1533 user      20   0  319356   9248   6904 S   0.0   0.5   0:00.01 gsd-sound
+   1535 user      20   0  455884   8656   6212 S   0.0   0.4   0:00.01 gsd-usb-protect
+   1536 user      20   0  339320  21884  15628 S   0.0   1.1   0:00.15 gsd-wacom
+   1541 user      20   0  231796   5644   4608 S   0.0   0.3   0:00.04 gsd-disk-utilit
+   1542 user      20   0  386952  11668   6316 S   0.0   0.6   0:02.88 ibus-daemon
+   1551 user      20   0 1064452  47192  29576 S   0.0   2.3   0:00.59 evolution-alarm
+   1553 user      20   0  814164 205324  33032 S   0.0  10.2   0:21.84 gnome-software
+   1630 user      20   0 2452732  23480  14548 S   0.0   1.2   0:00.09 gjs
+   1660 user      20   0  341916  15384  12076 S   0.0   0.8   0:00.02 gsd-printer
+   1685 user      20   0  234204   6196   6196 S   0.0   0.3   0:00.00 ibus-dconf
+   1686 user      20   0  344616  24836  15768 S   0.0   1.2   0:03.41 ibus-extension-
+   1688 user      20   0  234172  10016   5464 S   0.0   0.5   0:00.01 ibus-portal
+   1709 user      20   0  231532  23840  20088 S   0.0   1.2   0:03.27 Xwayland
+   1726 user      20   0  160368   6424   6092 S   0.0   0.3   0:00.86 ibus-engine-sim
+   1735 user      20   0  621572  14508   9636 S   0.0   0.7   0:00.20 xdg-desktop-por
+   1740 user      20   0  534084   8304   6056 S   0.0   0.4   0:00.02 xdg-document-po
+   1749 root      20   0    2488    836    836 S   0.0   0.0   0:00.00 fusermount3
+   1755 user      20   0  377104  22256  13568 S   0.0   1.1   0:00.24 xdg-desktop-por
+   1780 user      20   0  548188  45920  30008 S   0.0   2.3   0:00.27 gsd-xsettings
+   1806 user      20   0  190220  20680  15820 S   0.0   1.0   0:00.12 ibus-x11
+   1811 user      39  19  707616  49904  14440 S   0.0   2.5   0:01.14 tracker-miner-f
+   1824 user      20   0   18700     36      0 S   0.0   0.0   0:00.00 VBoxClient
+   1825 user      20   0  226104  53564   1624 S   0.0   2.7   0:00.30 VBoxClient
+   1845 user      20   0  339764  22680  16372 S   0.0   1.1   0:00.18 xdg-desktop-por
+   1851 user      20   0   18700     24      0 S   0.0   0.0   0:00.00 VBoxClient
+   1852 user      20   0  154588   1320   1236 S   0.0   0.1   0:00.74 VBoxClient
+   2111 user      20   0  159924   6088   5756 S   0.0   0.3   0:00.01 gvfsd-metadata
+   2137 user      20   0  156332   5584   5044 S   0.0   0.3   0:00.01 dconf-service
+  39012 root      20   0  352832   3028    940 S   0.0   0.2   0:03.36 VBoxDRMClient
+  39015 root      20   0  293464   3120   2796 S   0.0   0.2   0:03.43 VBoxService
+  39046 root      20   0  152260   2692   2392 S   0.0   0.1   0:00.00 VBoxService
+  40571 root      20   0   15452   9436   8120 S   0.0   0.5   0:00.01 sshd
+  41285 root      20   0       0      0      0 I   0.0   0.0   0:00.15 kworker/u2:1-flush-8:0
+  41319 root      20   0       0      0      0 I   0.0   0.0   0:01.57 kworker/0:3-events
+  41754 root      20   0   17808  10980   9372 S   0.0   0.5   0:00.09 sshd
+  41791 user      20   0   18068   6992   5096 S   0.0   0.3   0:00.06 sshd
+  41792 user      20   0    8244   5108   3520 S   0.0   0.3   0:00.02 bash
+  41822 root      20   0   10352   4996   4492 S   0.0   0.2   0:00.09 sudo
+  41823 root      20   0   10352    556      0 S   0.0   0.0   0:00.00 sudo
+  41824 root      20   0    8248   5084   3492 S   0.0   0.3   0:00.03 bash
+  41828 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker/u2:2-events_unbound
+  41831 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/0:2-ata_sff
+  41849 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-ata_sff
+  41851 root      20   0    5504   1048    960 S   0.0   0.1   0:00.01 script
+  41852 root      20   0    7204   3944   3396 S   0.0   0.2   0:00.00 bash
+
+top - 22:23:18 up  1:30,  3 users,  load average: 0.03, 0.03, 0.04
+Tasks: 166 total,   2 running, 164 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.6 us,  2.2 sy,  0.0 ni, 96.9 id,  0.0 wa,  0.0 hi,  0.3 si,  0.0 st 
+MiB Mem :   1967.3 total,     90.3 free,   1198.2 used,    864.2 buff/cache     
+MiB Swap:    975.0 total,    726.3 free,    248.6 used.    769.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  41856 root      20   0   11604   5364   3312 R   1.0   0.3   0:00.05 top
+    505 root      20   0  258556  18080  13860 S   0.3   0.9   0:03.27 NetworkManager
+   1360 user      20   0 3423692 279196  73868 S   0.3  13.9   2:59.62 gnome-shell
+  41791 user      20   0   18068   6992   5096 S   0.3   0.3   0:00.07 sshd
+  41822 root      20   0   10352   4996   4492 S   0.3   0.2   0:00.10 sudo
+  41828 root      20   0       0      0      0 I   0.3   0.0   0:00.03 kworker/u2:2-flush-8:0
+  41851 root      20   0    5504   1048    960 S   0.3   0.1   0:00.02 script
+      1 root      20   0  168404  12336   8660 S   0.0   0.6   0:07.70 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     14 root      20   0       0      0      0 S   0.0   0.0   0:01.12 ksoftirqd/0
+     15 root      20   0       0      0      0 R   0.0   0.0   0:01.64 rcu_preempt
+     16 root      rt   0       0      0      0 S   0.0   0.0   0:00.04 migration/0
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     21 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     27 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     28 root      20   0       0      0      0 S   0.0   0.0   0:01.20 kcompactd0
+     29 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     30 root      39  19       0      0      0 S   0.0   0.0   0:00.57 khugepaged
+     31 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     32 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     33 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     34 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     35 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     36 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     37 root       0 -20       0      0      0 I   0.0   0.0   0:01.43 kworker/0:1H-kblockd
+     38 root      20   0       0      0      0 S   0.0   0.0   0:01.72 kswapd0
+     44 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     46 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 acpi_thermal_pm
+     48 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mld
+     49 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
+     54 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+     59 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 zswap-shrink
+     60 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u3:0
+    125 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+    126 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_0
+    127 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_0
+    128 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_1
+    129 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
+    131 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_2
+    132 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_2
+    138 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/18-vmwgfx
+    139 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:2H-kblockd
+    178 root      20   0       0      0      0 S   0.0   0.0   0:00.28 jbd2/sda1-8
+    179 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    226 root      20   0   49924  16780  15964 S   0.0   0.8   0:00.68 systemd-journal
+    248 root      20   0   28472   6940   4448 S   0.0   0.3   0:00.24 systemd-udevd
+    319 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    345 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 iprt-VBoxWQueue
+    438 root      20   0  236908   9212   6620 S   0.0   0.5   0:00.18 accounts-daemon
+    449 avahi     20   0    8300   3556   3196 S   0.0   0.2   0:00.41 avahi-daemon
+    455 root      20   0    6616   2756   2508 S   0.0   0.1   0:00.01 cron
+    458 message+  20   0   17928  12316   3924 S   0.0   0.6   0:03.93 dbus-daemon
+    466 root      -2   0  230032   5728   5228 S   0.0   0.3   0:00.03 low-memory-moni
+    472 polkitd   20   0  314348  11508   7548 S   0.0   0.6   0:01.06 polkitd
+    473 root      20   0  237004   6488   6172 S   0.0   0.3   0:00.04 power-profiles-
+    478 root      20   0  233388   6112   5812 S   0.0   0.3   0:00.03 switcheroo-cont
+    480 root      20   0   25376   7664   6712 S   0.0   0.4   0:00.60 systemd-logind
+    483 root      20   0  394852  13008   9232 S   0.0   0.6   0:00.59 udisksd
+    491 root      -2   0       0      0      0 S   0.0   0.0   0:00.04 psimon
+    497 avahi     20   0    8112    324      0 S   0.0   0.0   0:00.00 avahi-daemon
+    519 root      20   0   16552   4732   3888 S   0.0   0.2   0:00.04 wpa_supplicant
+    535 root      20   0  317336   9716   8112 S   0.0   0.5   0:00.10 ModemManager
+    550 root      20   0   27068   8192   6752 S   0.0   0.4   0:00.02 cupsd
+    712 root      20   0  176252  11724  10376 S   0.0   0.6   0:00.05 cups-browsed
+    721 root      20   0  240368   8136   7488 S   0.0   0.4   0:00.03 gdm3
+    779 rtkit     21   1   22708   1492   1252 S   0.0   0.1   0:00.07 rtkit-daemon
+    891 root      20   0  233768   6156   5756 S   0.0   0.3   0:00.07 upowerd
+    927 colord    20   0  242336   9860   7592 S   0.0   0.5   0:00.16 colord
+   1173 root      20   0  165356   8116   7612 S   0.0   0.4   0:00.10 gdm-session-wor
+   1187 user      20   0   19772  10740   8304 S   0.0   0.5   0:00.54 systemd
+   1190 user      20   0  103592   1736      0 S   0.0   0.1   0:00.00 (sd-pam)
+   1205 user       9 -11   55532  13436   7664 S   0.0   0.7   0:00.78 pipewire
+   1211 user       9 -11  257228  14204   9888 S   0.0   0.7   0:00.77 wireplumber
+   1215 user       9 -11   34996  11680   7328 S   0.0   0.6   0:00.47 pipewire-pulse
+   1216 user      20   0  239916   8256   7820 S   0.0   0.4   0:00.05 gnome-keyring-d
+   1219 user      20   0   10224   5252   3968 S   0.0   0.3   0:00.44 dbus-daemon
+   1231 user      20   0  237524   6700   6356 S   0.0   0.3   0:00.03 gvfsd
+   1237 user      20   0  159292   5256   5256 S   0.0   0.3   0:00.01 gdm-wayland-ses
+   1241 user      20   0  297964  16368  12584 S   0.0   0.8   0:00.04 gnome-session-b
+   1316 user      20   0  380384   7868   5176 S   0.0   0.4   0:00.01 gvfsd-fuse
+   1328 user      20   0   88392   5056   4420 S   0.0   0.3   0:00.00 gcr-ssh-agent
+   1330 user      20   0   88840   4612   4612 S   0.0   0.2   0:00.00 gnome-session-c
+   1331 user      20   0    7836   4592   3944 S   0.0   0.2   0:00.00 ssh-agent
+   1341 user      20   0  593712  18264  13176 S   0.0   0.9   0:00.14 gnome-session-b
+   1359 user      20   0  311212   6824   6608 S   0.0   0.3   0:00.01 at-spi-bus-laun
+   1366 user      20   0    9132   4232   3980 S   0.0   0.2   0:00.01 dbus-daemon
+   1406 user      20   0  236712   4804   4748 S   0.0   0.2   0:00.00 xdg-permission-
+   1408 user      20   0  581008  10500  10500 S   0.0   0.5   0:00.08 gnome-shell-cal
+   1417 user      20   0 1024124  32656  18140 S   0.0   1.6   0:00.38 evolution-sourc
+   1430 user      20   0  499116  12072   8544 S   0.0   0.6   0:00.58 gvfs-udisks2-vo
+   1435 user      20   0  312444   8860   6508 S   0.0   0.4   0:00.33 gvfs-afc-volume
+   1444 user      20   0  234324   5792   5616 S   0.0   0.3   0:00.01 gvfs-gphoto2-vo
+   1445 user      20   0  884800  17720  13232 S   0.0   0.9   0:00.17 goa-daemon
+   1449 user      20   0  233368   5772   5436 S   0.0   0.3   0:00.01 gvfs-mtp-volume
+   1452 user      20   0  683532  18788  13612 S   0.0   0.9   0:00.10 evolution-calen
+   1458 user      20   0  233532   5636   5424 S   0.0   0.3   0:00.01 gvfs-goa-volume
+   1467 user      20   0  678272  19528  15440 S   0.0   1.0   0:00.07 evolution-addre
+   1489 user      20   0  312584   9528   6452 S   0.0   0.5   0:00.12 goa-identity-se
+   1497 user      20   0  164332   8688   6420 S   0.0   0.4   0:00.02 at-spi2-registr
+   1498 user      20   0 2452788  23120  14316 S   0.0   1.1   0:00.08 gjs
+   1506 user      20   0    2584    696    696 S   0.0   0.0   0:00.00 sh
+   1507 user      20   0  307344   5648   5420 S   0.0   0.3   0:00.00 gsd-a11y-settin
+   1508 user      20   0  339816  21932  16184 S   0.0   1.1   0:00.15 gsd-color
+   1510 user      20   0  355236  10424   8152 S   0.0   0.5   0:00.02 gsd-datetime
+   1517 user      20   0  382640   6728   6256 S   0.0   0.3   0:00.23 gsd-housekeepin
+   1518 user      20   0  338632  19272  15592 S   0.0   1.0   0:00.12 gsd-keyboard
+   1522 user      20   0  668156  23684  17036 S   0.0   1.2   0:00.24 gsd-media-keys
+   1523 user      20   0  376400  24064  17396 S   0.0   1.2   0:00.18 gsd-power
+   1524 user      20   0  247224  11412   9196 S   0.0   0.6   0:00.02 gsd-print-notif
+   1526 user      20   0  454772   6996   5092 S   0.0   0.3   0:00.01 gsd-rfkill
+   1528 user      20   0  233188   5796   5612 S   0.0   0.3   0:00.00 gsd-screensaver
+   1529 user      20   0  463248  10032   7252 S   0.0   0.5   0:00.02 gsd-sharing
+   1530 user      20   0  385564   4908   4552 S   0.0   0.2   0:00.02 gsd-smartcard
+   1533 user      20   0  319356   9248   6904 S   0.0   0.5   0:00.01 gsd-sound
+   1535 user      20   0  455884   8656   6212 S   0.0   0.4   0:00.01 gsd-usb-protect
+   1536 user      20   0  339320  21884  15628 S   0.0   1.1   0:00.15 gsd-wacom
+   1541 user      20   0  231796   5644   4608 S   0.0   0.3   0:00.04 gsd-disk-utilit
+   1542 user      20   0  386952  11668   6316 S   0.0   0.6   0:02.88 ibus-daemon
+   1551 user      20   0 1064452  47192  29576 S   0.0   2.3   0:00.59 evolution-alarm
+   1553 user      20   0  814164 205324  33032 S   0.0  10.2   0:21.84 gnome-software
+   1630 user      20   0 2452732  23480  14548 S   0.0   1.2   0:00.09 gjs
+   1660 user      20   0  341916  15384  12076 S   0.0   0.8   0:00.02 gsd-printer
+   1685 user      20   0  234204   6196   6196 S   0.0   0.3   0:00.00 ibus-dconf
+   1686 user      20   0  344616  24836  15768 S   0.0   1.2   0:03.41 ibus-extension-
+   1688 user      20   0  234172  10016   5464 S   0.0   0.5   0:00.01 ibus-portal
+   1709 user      20   0  231532  23840  20088 S   0.0   1.2   0:03.27 Xwayland
+   1726 user      20   0  160368   6424   6092 S   0.0   0.3   0:00.86 ibus-engine-sim
+   1735 user      20   0  621572  14508   9636 S   0.0   0.7   0:00.20 xdg-desktop-por
+   1740 user      20   0  534084   8304   6056 S   0.0   0.4   0:00.02 xdg-document-po
+   1749 root      20   0    2488    836    836 S   0.0   0.0   0:00.00 fusermount3
+   1755 user      20   0  377104  22256  13568 S   0.0   1.1   0:00.24 xdg-desktop-por
+   1780 user      20   0  548188  45920  30008 S   0.0   2.3   0:00.27 gsd-xsettings
+   1806 user      20   0  190220  20680  15820 S   0.0   1.0   0:00.12 ibus-x11
+   1811 user      39  19  707616  49904  14440 S   0.0   2.5   0:01.14 tracker-miner-f
+   1824 user      20   0   18700     36      0 S   0.0   0.0   0:00.00 VBoxClient
+   1825 user      20   0  226104  53564   1624 S   0.0   2.7   0:00.30 VBoxClient
+   1845 user      20   0  339764  22680  16372 S   0.0   1.1   0:00.18 xdg-desktop-por
+   1851 user      20   0   18700     24      0 S   0.0   0.0   0:00.00 VBoxClient
+   1852 user      20   0  154588   1320   1236 S   0.0   0.1   0:00.74 VBoxClient
+   2111 user      20   0  159924   6088   5756 S   0.0   0.3   0:00.01 gvfsd-metadata
+   2137 user      20   0  156332   5584   5044 S   0.0   0.3   0:00.01 dconf-service
+  39012 root      20   0  352832   3028    940 S   0.0   0.2   0:03.36 VBoxDRMClient
+  39015 root      20   0  293464   3120   2796 S   0.0   0.2   0:03.43 VBoxService
+  39046 root      20   0  152260   2692   2392 S   0.0   0.1   0:00.00 VBoxService
+  40571 root      20   0   15452   9436   8120 S   0.0   0.5   0:00.01 sshd
+  41285 root      20   0       0      0      0 I   0.0   0.0   0:00.15 kworker/u2:1-flush-8:0
+  41319 root      20   0       0      0      0 I   0.0   0.0   0:01.57 kworker/0:3-events
+  41754 root      20   0   17808  10980   9372 S   0.0   0.5   0:00.09 sshd
+  41792 user      20   0    8244   5108   3520 S   0.0   0.3   0:00.02 bash
+  41823 root      20   0   10352    556      0 S   0.0   0.0   0:00.00 sudo
+  41824 root      20   0    8248   5084   3492 S   0.0   0.3   0:00.03 bash
+  41831 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/0:2-ata_sff
+  41849 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-ata_sff
+  41852 root      20   0    7204   3944   3396 S   0.0   0.2   0:00.00 bash
+
+top - 22:23:21 up  1:30,  3 users,  load average: 0.03, 0.03, 0.04
+Tasks: 166 total,   1 running, 165 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.7 us,  1.7 sy,  0.0 ni, 97.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   1967.3 total,     90.3 free,   1198.2 used,    864.3 buff/cache     
+MiB Swap:    975.0 total,    726.3 free,    248.6 used.    769.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    505 root      20   0  258556  18080  13860 S   0.7   0.9   0:03.29 NetworkManager
+  41856 root      20   0   11604   5364   3312 R   0.7   0.3   0:00.07 top
+     15 root      20   0       0      0      0 I   0.3   0.0   0:01.65 rcu_preempt
+  39015 root      20   0  293464   3120   2796 S   0.3   0.2   0:03.44 VBoxService
+  41791 user      20   0   18068   6992   5096 S   0.3   0.3   0:00.08 sshd
+  41822 root      20   0   10352   4996   4492 S   0.3   0.2   0:00.11 sudo
+  41828 root      20   0       0      0      0 I   0.3   0.0   0:00.04 kworker/u2:2-events_unbound
+      1 root      20   0  168404  12336   8660 S   0.0   0.6   0:07.70 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     14 root      20   0       0      0      0 S   0.0   0.0   0:01.12 ksoftirqd/0
+     16 root      rt   0       0      0      0 S   0.0   0.0   0:00.04 migration/0
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     21 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     27 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     28 root      20   0       0      0      0 S   0.0   0.0   0:01.20 kcompactd0
+     29 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     30 root      39  19       0      0      0 S   0.0   0.0   0:00.57 khugepaged
+     31 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     32 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     33 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     34 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     35 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     36 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     37 root       0 -20       0      0      0 I   0.0   0.0   0:01.43 kworker/0:1H-kblockd
+     38 root      20   0       0      0      0 S   0.0   0.0   0:01.72 kswapd0
+     44 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     46 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 acpi_thermal_pm
+     48 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mld
+     49 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
+     54 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+     59 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 zswap-shrink
+     60 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u3:0
+    125 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+    126 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_0
+    127 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_0
+    128 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_1
+    129 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
+    131 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_2
+    132 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_2
+    138 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/18-vmwgfx
+    139 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:2H-kblockd
+    178 root      20   0       0      0      0 S   0.0   0.0   0:00.28 jbd2/sda1-8
+    179 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    226 root      20   0   49924  16780  15964 S   0.0   0.8   0:00.68 systemd-journal
+    248 root      20   0   28472   6940   4448 S   0.0   0.3   0:00.24 systemd-udevd
+    319 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    345 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 iprt-VBoxWQueue
+    438 root      20   0  236908   9212   6620 S   0.0   0.5   0:00.18 accounts-daemon
+    449 avahi     20   0    8300   3556   3196 S   0.0   0.2   0:00.41 avahi-daemon
+    455 root      20   0    6616   2756   2508 S   0.0   0.1   0:00.01 cron
+    458 message+  20   0   17928  12316   3924 S   0.0   0.6   0:03.93 dbus-daemon
+    466 root      -2   0  230032   5728   5228 S   0.0   0.3   0:00.03 low-memory-moni
+    472 polkitd   20   0  314348  11508   7548 S   0.0   0.6   0:01.06 polkitd
+    473 root      20   0  237004   6488   6172 S   0.0   0.3   0:00.04 power-profiles-
+    478 root      20   0  233388   6112   5812 S   0.0   0.3   0:00.03 switcheroo-cont
+    480 root      20   0   25376   7664   6712 S   0.0   0.4   0:00.60 systemd-logind
+    483 root      20   0  394852  13008   9232 S   0.0   0.6   0:00.59 udisksd
+    491 root      -2   0       0      0      0 S   0.0   0.0   0:00.04 psimon
+    497 avahi     20   0    8112    324      0 S   0.0   0.0   0:00.00 avahi-daemon
+    519 root      20   0   16552   4732   3888 S   0.0   0.2   0:00.04 wpa_supplicant
+    535 root      20   0  317336   9716   8112 S   0.0   0.5   0:00.10 ModemManager
+    550 root      20   0   27068   8192   6752 S   0.0   0.4   0:00.02 cupsd
+    712 root      20   0  176252  11724  10376 S   0.0   0.6   0:00.05 cups-browsed
+    721 root      20   0  240368   8136   7488 S   0.0   0.4   0:00.03 gdm3
+    779 rtkit     21   1   22708   1492   1252 S   0.0   0.1   0:00.07 rtkit-daemon
+    891 root      20   0  233768   6156   5756 S   0.0   0.3   0:00.07 upowerd
+    927 colord    20   0  242336   9860   7592 S   0.0   0.5   0:00.16 colord
+   1173 root      20   0  165356   8116   7612 S   0.0   0.4   0:00.10 gdm-session-wor
+   1187 user      20   0   19772  10740   8304 S   0.0   0.5   0:00.54 systemd
+   1190 user      20   0  103592   1736      0 S   0.0   0.1   0:00.00 (sd-pam)
+   1205 user       9 -11   55532  13436   7664 S   0.0   0.7   0:00.78 pipewire
+   1211 user       9 -11  257228  14204   9888 S   0.0   0.7   0:00.77 wireplumber
+   1215 user       9 -11   34996  11680   7328 S   0.0   0.6   0:00.47 pipewire-pulse
+   1216 user      20   0  239916   8256   7820 S   0.0   0.4   0:00.05 gnome-keyring-d
+   1219 user      20   0   10224   5252   3968 S   0.0   0.3   0:00.44 dbus-daemon
+   1231 user      20   0  237524   6700   6356 S   0.0   0.3   0:00.03 gvfsd
+   1237 user      20   0  159292   5256   5256 S   0.0   0.3   0:00.01 gdm-wayland-ses
+   1241 user      20   0  297964  16368  12584 S   0.0   0.8   0:00.04 gnome-session-b
+   1316 user      20   0  380384   7868   5176 S   0.0   0.4   0:00.01 gvfsd-fuse
+   1328 user      20   0   88392   5056   4420 S   0.0   0.3   0:00.00 gcr-ssh-agent
+   1330 user      20   0   88840   4612   4612 S   0.0   0.2   0:00.00 gnome-session-c
+   1331 user      20   0    7836   4592   3944 S   0.0   0.2   0:00.00 ssh-agent
+   1341 user      20   0  593712  18264  13176 S   0.0   0.9   0:00.14 gnome-session-b
+   1359 user      20   0  311212   6824   6608 S   0.0   0.3   0:00.01 at-spi-bus-laun
+   1360 user      20   0 3423692 279196  73868 S   0.0  13.9   2:59.62 gnome-shell
+   1366 user      20   0    9132   4232   3980 S   0.0   0.2   0:00.01 dbus-daemon
+   1406 user      20   0  236712   4804   4748 S   0.0   0.2   0:00.00 xdg-permission-
+   1408 user      20   0  581008  10500  10500 S   0.0   0.5   0:00.08 gnome-shell-cal
+   1417 user      20   0 1024124  32656  18140 S   0.0   1.6   0:00.38 evolution-sourc
+   1430 user      20   0  499116  12072   8544 S   0.0   0.6   0:00.58 gvfs-udisks2-vo
+   1435 user      20   0  312444   8860   6508 S   0.0   0.4   0:00.33 gvfs-afc-volume
+   1444 user      20   0  234324   5792   5616 S   0.0   0.3   0:00.01 gvfs-gphoto2-vo
+   1445 user      20   0  884800  17720  13232 S   0.0   0.9   0:00.17 goa-daemon
+   1449 user      20   0  233368   5772   5436 S   0.0   0.3   0:00.01 gvfs-mtp-volume
+   1452 user      20   0  683532  18788  13612 S   0.0   0.9   0:00.10 evolution-calen
+   1458 user      20   0  233532   5636   5424 S   0.0   0.3   0:00.01 gvfs-goa-volume
+   1467 user      20   0  678272  19528  15440 S   0.0   1.0   0:00.07 evolution-addre
+   1489 user      20   0  312584   9528   6452 S   0.0   0.5   0:00.12 goa-identity-se
+   1497 user      20   0  164332   8688   6420 S   0.0   0.4   0:00.02 at-spi2-registr
+   1498 user      20   0 2452788  23120  14316 S   0.0   1.1   0:00.08 gjs
+   1506 user      20   0    2584    696    696 S   0.0   0.0   0:00.00 sh
+   1507 user      20   0  307344   5648   5420 S   0.0   0.3   0:00.00 gsd-a11y-settin
+   1508 user      20   0  339816  21932  16184 S   0.0   1.1   0:00.15 gsd-color
+   1510 user      20   0  355236  10424   8152 S   0.0   0.5   0:00.02 gsd-datetime
+   1517 user      20   0  382640   6728   6256 S   0.0   0.3   0:00.23 gsd-housekeepin
+   1518 user      20   0  338632  19272  15592 S   0.0   1.0   0:00.12 gsd-keyboard
+   1522 user      20   0  668156  23684  17036 S   0.0   1.2   0:00.24 gsd-media-keys
+   1523 user      20   0  376400  24064  17396 S   0.0   1.2   0:00.18 gsd-power
+   1524 user      20   0  247224  11412   9196 S   0.0   0.6   0:00.02 gsd-print-notif
+   1526 user      20   0  454772   6996   5092 S   0.0   0.3   0:00.01 gsd-rfkill
+   1528 user      20   0  233188   5796   5612 S   0.0   0.3   0:00.00 gsd-screensaver
+   1529 user      20   0  463248  10032   7252 S   0.0   0.5   0:00.02 gsd-sharing
+   1530 user      20   0  385564   4908   4552 S   0.0   0.2   0:00.02 gsd-smartcard
+   1533 user      20   0  319356   9248   6904 S   0.0   0.5   0:00.01 gsd-sound
+   1535 user      20   0  455884   8656   6212 S   0.0   0.4   0:00.01 gsd-usb-protect
+   1536 user      20   0  339320  21884  15628 S   0.0   1.1   0:00.15 gsd-wacom
+   1541 user      20   0  231796   5644   4608 S   0.0   0.3   0:00.04 gsd-disk-utilit
+   1542 user      20   0  386952  11668   6316 S   0.0   0.6   0:02.88 ibus-daemon
+   1551 user      20   0 1064452  47192  29576 S   0.0   2.3   0:00.59 evolution-alarm
+   1553 user      20   0  814164 205324  33032 S   0.0  10.2   0:21.84 gnome-software
+   1630 user      20   0 2452732  23480  14548 S   0.0   1.2   0:00.09 gjs
+   1660 user      20   0  341916  15384  12076 S   0.0   0.8   0:00.02 gsd-printer
+   1685 user      20   0  234204   6196   6196 S   0.0   0.3   0:00.00 ibus-dconf
+   1686 user      20   0  344616  24836  15768 S   0.0   1.2   0:03.41 ibus-extension-
+   1688 user      20   0  234172  10016   5464 S   0.0   0.5   0:00.01 ibus-portal
+   1709 user      20   0  231532  23840  20088 S   0.0   1.2   0:03.27 Xwayland
+   1726 user      20   0  160368   6424   6092 S   0.0   0.3   0:00.86 ibus-engine-sim
+   1735 user      20   0  621572  14508   9636 S   0.0   0.7   0:00.20 xdg-desktop-por
+   1740 user      20   0  534084   8304   6056 S   0.0   0.4   0:00.02 xdg-document-po
+   1749 root      20   0    2488    836    836 S   0.0   0.0   0:00.00 fusermount3
+   1755 user      20   0  377104  22256  13568 S   0.0   1.1   0:00.24 xdg-desktop-por
+   1780 user      20   0  548188  45920  30008 S   0.0   2.3   0:00.27 gsd-xsettings
+   1806 user      20   0  190220  20680  15820 S   0.0   1.0   0:00.12 ibus-x11
+   1811 user      39  19  707616  49904  14440 S   0.0   2.5   0:01.14 tracker-miner-f
+   1824 user      20   0   18700     36      0 S   0.0   0.0   0:00.00 VBoxClient
+   1825 user      20   0  226104  53564   1624 S   0.0   2.7   0:00.30 VBoxClient
+   1845 user      20   0  339764  22680  16372 S   0.0   1.1   0:00.18 xdg-desktop-por
+   1851 user      20   0   18700     24      0 S   0.0   0.0   0:00.00 VBoxClient
+   1852 user      20   0  154588   1320   1236 S   0.0   0.1   0:00.74 VBoxClient
+   2111 user      20   0  159924   6088   5756 S   0.0   0.3   0:00.01 gvfsd-metadata
+   2137 user      20   0  156332   5584   5044 S   0.0   0.3   0:00.01 dconf-service
+  39012 root      20   0  352832   3028    940 S   0.0   0.2   0:03.36 VBoxDRMClient
+  39046 root      20   0  152260   2692   2392 S   0.0   0.1   0:00.00 VBoxService
+  40571 root      20   0   15452   9436   8120 S   0.0   0.5   0:00.01 sshd
+  41285 root      20   0       0      0      0 I   0.0   0.0   0:00.15 kworker/u2:1-flush-8:0
+  41319 root      20   0       0      0      0 I   0.0   0.0   0:01.57 kworker/0:3-events_freezable_power_
+  41754 root      20   0   17808  10980   9372 S   0.0   0.5   0:00.09 sshd
+  41792 user      20   0    8244   5108   3520 S   0.0   0.3   0:00.02 bash
+  41823 root      20   0   10352    556      0 S   0.0   0.0   0:00.00 sudo
+  41824 root      20   0    8248   5084   3492 S   0.0   0.3   0:00.03 bash
+  41831 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/0:2-ata_sff
+  41849 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-ata_sff
+  41851 root      20   0    5504   1048    960 S   0.0   0.1   0:00.02 script
+  41852 root      20   0    7204   3944   3396 S   0.0   0.2   0:00.00 bash
+
+top - 22:23:24 up  1:30,  3 users,  load average: 0.03, 0.03, 0.04
+Tasks: 166 total,   1 running, 165 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.3 us,  1.3 sy,  0.0 ni, 98.0 id,  0.0 wa,  0.0 hi,  0.3 si,  0.0 st 
+MiB Mem :   1967.3 total,     90.3 free,   1198.2 used,    864.3 buff/cache     
+MiB Swap:    975.0 total,    726.3 free,    248.6 used.    769.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  41822 root      20   0   10352   4996   4492 S   0.7   0.2   0:00.13 sudo
+   1360 user      20   0 3423692 279196  73868 S   0.3  13.9   2:59.63 gnome-shell
+  41319 root      20   0       0      0      0 I   0.3   0.0   0:01.58 kworker/0:3-events
+  41791 user      20   0   18068   6992   5096 S   0.3   0.3   0:00.09 sshd
+  41828 root      20   0       0      0      0 I   0.3   0.0   0:00.05 kworker/u2:2-events_unbound
+  41851 root      20   0    5504   1048    960 S   0.3   0.1   0:00.03 script
+  41856 root      20   0   11604   5364   3312 R   0.3   0.3   0:00.08 top
+      1 root      20   0  168404  12336   8660 S   0.0   0.6   0:07.70 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     14 root      20   0       0      0      0 S   0.0   0.0   0:01.12 ksoftirqd/0
+     15 root      20   0       0      0      0 I   0.0   0.0   0:01.65 rcu_preempt
+     16 root      rt   0       0      0      0 S   0.0   0.0   0:00.04 migration/0
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     21 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     27 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     28 root      20   0       0      0      0 S   0.0   0.0   0:01.20 kcompactd0
+     29 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     30 root      39  19       0      0      0 S   0.0   0.0   0:00.57 khugepaged
+     31 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     32 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     33 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     34 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     35 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     36 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     37 root       0 -20       0      0      0 I   0.0   0.0   0:01.43 kworker/0:1H-kblockd
+     38 root      20   0       0      0      0 S   0.0   0.0   0:01.72 kswapd0
+     44 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     46 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 acpi_thermal_pm
+     48 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mld
+     49 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
+     54 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+     59 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 zswap-shrink
+     60 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u3:0
+    125 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+    126 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_0
+    127 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_0
+    128 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_1
+    129 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
+    131 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_2
+    132 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_2
+    138 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/18-vmwgfx
+    139 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:2H-kblockd
+    178 root      20   0       0      0      0 S   0.0   0.0   0:00.28 jbd2/sda1-8
+    179 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    226 root      20   0   49924  16780  15964 S   0.0   0.8   0:00.68 systemd-journal
+    248 root      20   0   28472   6940   4448 S   0.0   0.3   0:00.24 systemd-udevd
+    319 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    345 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 iprt-VBoxWQueue
+    438 root      20   0  236908   9212   6620 S   0.0   0.5   0:00.18 accounts-daemon
+    449 avahi     20   0    8300   3556   3196 S   0.0   0.2   0:00.41 avahi-daemon
+    455 root      20   0    6616   2756   2508 S   0.0   0.1   0:00.01 cron
+    458 message+  20   0   17928  12316   3924 S   0.0   0.6   0:03.93 dbus-daemon
+    466 root      -2   0  230032   5728   5228 S   0.0   0.3   0:00.03 low-memory-moni
+    472 polkitd   20   0  314348  11508   7548 S   0.0   0.6   0:01.06 polkitd
+    473 root      20   0  237004   6488   6172 S   0.0   0.3   0:00.04 power-profiles-
+    478 root      20   0  233388   6112   5812 S   0.0   0.3   0:00.03 switcheroo-cont
+    480 root      20   0   25376   7664   6712 S   0.0   0.4   0:00.60 systemd-logind
+    483 root      20   0  394852  13008   9232 S   0.0   0.6   0:00.59 udisksd
+    491 root      -2   0       0      0      0 S   0.0   0.0   0:00.04 psimon
+    497 avahi     20   0    8112    324      0 S   0.0   0.0   0:00.00 avahi-daemon
+    505 root      20   0  258556  18080  13860 S   0.0   0.9   0:03.29 NetworkManager
+    519 root      20   0   16552   4732   3888 S   0.0   0.2   0:00.04 wpa_supplicant
+    535 root      20   0  317336   9716   8112 S   0.0   0.5   0:00.10 ModemManager
+    550 root      20   0   27068   8192   6752 S   0.0   0.4   0:00.02 cupsd
+    712 root      20   0  176252  11724  10376 S   0.0   0.6   0:00.05 cups-browsed
+    721 root      20   0  240368   8136   7488 S   0.0   0.4   0:00.03 gdm3
+    779 rtkit     21   1   22708   1492   1252 S   0.0   0.1   0:00.07 rtkit-daemon
+    891 root      20   0  233768   6156   5756 S   0.0   0.3   0:00.07 upowerd
+    927 colord    20   0  242336   9860   7592 S   0.0   0.5   0:00.16 colord
+   1173 root      20   0  165356   8116   7612 S   0.0   0.4   0:00.10 gdm-session-wor
+   1187 user      20   0   19772  10740   8304 S   0.0   0.5   0:00.54 systemd
+   1190 user      20   0  103592   1736      0 S   0.0   0.1   0:00.00 (sd-pam)
+   1205 user       9 -11   55532  13436   7664 S   0.0   0.7   0:00.78 pipewire
+   1211 user       9 -11  257228  14204   9888 S   0.0   0.7   0:00.77 wireplumber
+   1215 user       9 -11   34996  11680   7328 S   0.0   0.6   0:00.47 pipewire-pulse
+   1216 user      20   0  239916   8256   7820 S   0.0   0.4   0:00.05 gnome-keyring-d
+   1219 user      20   0   10224   5252   3968 S   0.0   0.3   0:00.44 dbus-daemon
+   1231 user      20   0  237524   6700   6356 S   0.0   0.3   0:00.03 gvfsd
+   1237 user      20   0  159292   5256   5256 S   0.0   0.3   0:00.01 gdm-wayland-ses
+   1241 user      20   0  297964  16368  12584 S   0.0   0.8   0:00.04 gnome-session-b
+   1316 user      20   0  380384   7868   5176 S   0.0   0.4   0:00.01 gvfsd-fuse
+   1328 user      20   0   88392   5056   4420 S   0.0   0.3   0:00.00 gcr-ssh-agent
+   1330 user      20   0   88840   4612   4612 S   0.0   0.2   0:00.00 gnome-session-c
+   1331 user      20   0    7836   4592   3944 S   0.0   0.2   0:00.00 ssh-agent
+   1341 user      20   0  593712  18264  13176 S   0.0   0.9   0:00.14 gnome-session-b
+   1359 user      20   0  311212   6824   6608 S   0.0   0.3   0:00.01 at-spi-bus-laun
+   1366 user      20   0    9132   4232   3980 S   0.0   0.2   0:00.01 dbus-daemon
+   1406 user      20   0  236712   4804   4748 S   0.0   0.2   0:00.00 xdg-permission-
+   1408 user      20   0  581008  10500  10500 S   0.0   0.5   0:00.08 gnome-shell-cal
+   1417 user      20   0 1024124  32656  18140 S   0.0   1.6   0:00.38 evolution-sourc
+   1430 user      20   0  499116  12072   8544 S   0.0   0.6   0:00.58 gvfs-udisks2-vo
+   1435 user      20   0  312444   8860   6508 S   0.0   0.4   0:00.33 gvfs-afc-volume
+   1444 user      20   0  234324   5792   5616 S   0.0   0.3   0:00.01 gvfs-gphoto2-vo
+   1445 user      20   0  884800  17720  13232 S   0.0   0.9   0:00.17 goa-daemon
+   1449 user      20   0  233368   5772   5436 S   0.0   0.3   0:00.01 gvfs-mtp-volume
+   1452 user      20   0  683532  18788  13612 S   0.0   0.9   0:00.10 evolution-calen
+   1458 user      20   0  233532   5636   5424 S   0.0   0.3   0:00.01 gvfs-goa-volume
+   1467 user      20   0  678272  19528  15440 S   0.0   1.0   0:00.07 evolution-addre
+   1489 user      20   0  312584   9528   6452 S   0.0   0.5   0:00.12 goa-identity-se
+   1497 user      20   0  164332   8688   6420 S   0.0   0.4   0:00.02 at-spi2-registr
+   1498 user      20   0 2452788  23120  14316 S   0.0   1.1   0:00.08 gjs
+   1506 user      20   0    2584    696    696 S   0.0   0.0   0:00.00 sh
+   1507 user      20   0  307344   5648   5420 S   0.0   0.3   0:00.00 gsd-a11y-settin
+   1508 user      20   0  339816  21932  16184 S   0.0   1.1   0:00.15 gsd-color
+   1510 user      20   0  355236  10424   8152 S   0.0   0.5   0:00.02 gsd-datetime
+   1517 user      20   0  382640   6728   6256 S   0.0   0.3   0:00.23 gsd-housekeepin
+   1518 user      20   0  338632  19272  15592 S   0.0   1.0   0:00.12 gsd-keyboard
+   1522 user      20   0  668156  23684  17036 S   0.0   1.2   0:00.24 gsd-media-keys
+   1523 user      20   0  376400  24064  17396 S   0.0   1.2   0:00.18 gsd-power
+   1524 user      20   0  247224  11412   9196 S   0.0   0.6   0:00.02 gsd-print-notif
+   1526 user      20   0  454772   6996   5092 S   0.0   0.3   0:00.01 gsd-rfkill
+   1528 user      20   0  233188   5796   5612 S   0.0   0.3   0:00.00 gsd-screensaver
+   1529 user      20   0  463248  10032   7252 S   0.0   0.5   0:00.02 gsd-sharing
+   1530 user      20   0  385564   4908   4552 S   0.0   0.2   0:00.02 gsd-smartcard
+   1533 user      20   0  319356   9248   6904 S   0.0   0.5   0:00.01 gsd-sound
+   1535 user      20   0  455884   8656   6212 S   0.0   0.4   0:00.01 gsd-usb-protect
+   1536 user      20   0  339320  21884  15628 S   0.0   1.1   0:00.15 gsd-wacom
+   1541 user      20   0  231796   5644   4608 S   0.0   0.3   0:00.04 gsd-disk-utilit
+   1542 user      20   0  386952  11668   6316 S   0.0   0.6   0:02.88 ibus-daemon
+   1551 user      20   0 1064452  47192  29576 S   0.0   2.3   0:00.59 evolution-alarm
+   1553 user      20   0  814164 205324  33032 S   0.0  10.2   0:21.84 gnome-software
+   1630 user      20   0 2452732  23480  14548 S   0.0   1.2   0:00.09 gjs
+   1660 user      20   0  341916  15384  12076 S   0.0   0.8   0:00.02 gsd-printer
+   1685 user      20   0  234204   6196   6196 S   0.0   0.3   0:00.00 ibus-dconf
+   1686 user      20   0  344616  24836  15768 S   0.0   1.2   0:03.41 ibus-extension-
+   1688 user      20   0  234172  10016   5464 S   0.0   0.5   0:00.01 ibus-portal
+   1709 user      20   0  231532  23840  20088 S   0.0   1.2   0:03.27 Xwayland
+   1726 user      20   0  160368   6424   6092 S   0.0   0.3   0:00.86 ibus-engine-sim
+   1735 user      20   0  621572  14508   9636 S   0.0   0.7   0:00.20 xdg-desktop-por
+   1740 user      20   0  534084   8304   6056 S   0.0   0.4   0:00.02 xdg-document-po
+   1749 root      20   0    2488    836    836 S   0.0   0.0   0:00.00 fusermount3
+   1755 user      20   0  377104  22256  13568 S   0.0   1.1   0:00.24 xdg-desktop-por
+   1780 user      20   0  548188  45920  30008 S   0.0   2.3   0:00.27 gsd-xsettings
+   1806 user      20   0  190220  20680  15820 S   0.0   1.0   0:00.12 ibus-x11
+   1811 user      39  19  707616  49904  14440 S   0.0   2.5   0:01.14 tracker-miner-f
+   1824 user      20   0   18700     36      0 S   0.0   0.0   0:00.00 VBoxClient
+   1825 user      20   0  226104  53564   1624 S   0.0   2.7   0:00.30 VBoxClient
+   1845 user      20   0  339764  22680  16372 S   0.0   1.1   0:00.18 xdg-desktop-por
+   1851 user      20   0   18700     24      0 S   0.0   0.0   0:00.00 VBoxClient
+   1852 user      20   0  154588   1320   1236 S   0.0   0.1   0:00.74 VBoxClient
+   2111 user      20   0  159924   6088   5756 S   0.0   0.3   0:00.01 gvfsd-metadata
+   2137 user      20   0  156332   5584   5044 S   0.0   0.3   0:00.01 dconf-service
+  39012 root      20   0  352832   3028    940 S   0.0   0.2   0:03.36 VBoxDRMClient
+  39015 root      20   0  293464   3120   2796 S   0.0   0.2   0:03.44 VBoxService
+  39046 root      20   0  152260   2692   2392 S   0.0   0.1   0:00.00 VBoxService
+  40571 root      20   0   15452   9436   8120 S   0.0   0.5   0:00.01 sshd
+  41285 root      20   0       0      0      0 I   0.0   0.0   0:00.15 kworker/u2:1-flush-8:0
+  41754 root      20   0   17808  10980   9372 S   0.0   0.5   0:00.09 sshd
+  41792 user      20   0    8244   5108   3520 S   0.0   0.3   0:00.02 bash
+  41823 root      20   0   10352    556      0 S   0.0   0.0   0:00.00 sudo
+  41824 root      20   0    8248   5084   3492 S   0.0   0.3   0:00.03 bash
+  41831 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/0:2-ata_sff
+  41849 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-ata_sff
+  41852 root      20   0    7204   3944   3396 S   0.0   0.2   0:00.00 bash
+
+top - 22:23:27 up  1:30,  3 users,  load average: 0.03, 0.03, 0.04
+Tasks: 166 total,   1 running, 165 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.7 us,  0.7 sy,  0.0 ni, 98.3 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   1967.3 total,     90.3 free,   1198.1 used,    864.3 buff/cache     
+MiB Swap:    975.0 total,    726.3 free,    248.6 used.    769.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  41856 root      20   0   11604   5364   3312 R   0.7   0.3   0:00.10 top
+  39012 root      20   0  352832   3028    940 S   0.3   0.2   0:03.37 VBoxDRMClient
+  41791 user      20   0   18068   6992   5096 S   0.3   0.3   0:00.10 sshd
+  41822 root      20   0   10352   4996   4492 S   0.3   0.2   0:00.14 sudo
+  41828 root      20   0       0      0      0 I   0.3   0.0   0:00.06 kworker/u2:2-events_unbound
+  41851 root      20   0    5504   1048    960 S   0.3   0.1   0:00.04 script
+      1 root      20   0  168404  12336   8660 S   0.0   0.6   0:07.70 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     14 root      20   0       0      0      0 S   0.0   0.0   0:01.12 ksoftirqd/0
+     15 root      20   0       0      0      0 I   0.0   0.0   0:01.65 rcu_preempt
+     16 root      rt   0       0      0      0 S   0.0   0.0   0:00.04 migration/0
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     21 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     27 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     28 root      20   0       0      0      0 S   0.0   0.0   0:01.20 kcompactd0
+     29 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     30 root      39  19       0      0      0 S   0.0   0.0   0:00.57 khugepaged
+     31 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     32 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     33 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     34 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     35 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     36 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     37 root       0 -20       0      0      0 I   0.0   0.0   0:01.43 kworker/0:1H-kblockd
+     38 root      20   0       0      0      0 S   0.0   0.0   0:01.72 kswapd0
+     44 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     46 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 acpi_thermal_pm
+     48 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mld
+     49 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
+     54 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+     59 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 zswap-shrink
+     60 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u3:0
+    125 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+    126 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_0
+    127 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_0
+    128 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_1
+    129 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
+    131 root      20   0       0      0      0 S   0.0   0.0   0:00.01 scsi_eh_2
+    132 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_2
+    138 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/18-vmwgfx
+    139 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:2H-kblockd
+    178 root      20   0       0      0      0 S   0.0   0.0   0:00.28 jbd2/sda1-8
+    179 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    226 root      20   0   49924  16780  15964 S   0.0   0.8   0:00.68 systemd-journal
+    248 root      20   0   28472   6940   4448 S   0.0   0.3   0:00.24 systemd-udevd
+    319 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    345 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 iprt-VBoxWQueue
+    438 root      20   0  236908   9212   6620 S   0.0   0.5   0:00.18 accounts-daemon
+    449 avahi     20   0    8300   3556   3196 S   0.0   0.2   0:00.41 avahi-daemon
+    455 root      20   0    6616   2756   2508 S   0.0   0.1   0:00.01 cron
+    458 message+  20   0   17928  12316   3924 S   0.0   0.6   0:03.93 dbus-daemon
+    466 root      -2   0  230032   5728   5228 S   0.0   0.3   0:00.03 low-memory-moni
+    472 polkitd   20   0  314348  11508   7548 S   0.0   0.6   0:01.06 polkitd
+    473 root      20   0  237004   6488   6172 S   0.0   0.3   0:00.04 power-profiles-
+    478 root      20   0  233388   6112   5812 S   0.0   0.3   0:00.03 switcheroo-cont
+    480 root      20   0   25376   7664   6712 S   0.0   0.4   0:00.60 systemd-logind
+    483 root      20   0  394852  13008   9232 S   0.0   0.6   0:00.59 udisksd
+    491 root      -2   0       0      0      0 S   0.0   0.0   0:00.04 psimon
+    497 avahi     20   0    8112    324      0 S   0.0   0.0   0:00.00 avahi-daemon
+    505 root      20   0  258556  18080  13860 S   0.0   0.9   0:03.29 NetworkManager
+    519 root      20   0   16552   4732   3888 S   0.0   0.2   0:00.04 wpa_supplicant
+    535 root      20   0  317336   9716   8112 S   0.0   0.5   0:00.10 ModemManager
+    550 root      20   0   27068   8192   6752 S   0.0   0.4   0:00.02 cupsd
+    712 root      20   0  176252  11724  10376 S   0.0   0.6   0:00.05 cups-browsed
+    721 root      20   0  240368   8136   7488 S   0.0   0.4   0:00.03 gdm3
+    779 rtkit     21   1   22708   1492   1252 S   0.0   0.1   0:00.07 rtkit-daemon
+    891 root      20   0  233768   6156   5756 S   0.0   0.3   0:00.07 upowerd
+    927 colord    20   0  242336   9860   7592 S   0.0   0.5   0:00.16 colord
+   1173 root      20   0  165356   8116   7612 S   0.0   0.4   0:00.10 gdm-session-wor
+   1187 user      20   0   19772  10740   8304 S   0.0   0.5   0:00.54 systemd
+   1190 user      20   0  103592   1736      0 S   0.0   0.1   0:00.00 (sd-pam)
+   1205 user       9 -11   55532  13436   7664 S   0.0   0.7   0:00.78 pipewire
+   1211 user       9 -11  257228  14204   9888 S   0.0   0.7   0:00.77 wireplumber
+   1215 user       9 -11   34996  11680   7328 S   0.0   0.6   0:00.47 pipewire-pulse
+   1216 user      20   0  239916   8256   7820 S   0.0   0.4   0:00.05 gnome-keyring-d
+   1219 user      20   0   10224   5252   3968 S   0.0   0.3   0:00.44 dbus-daemon
+   1231 user      20   0  237524   6700   6356 S   0.0   0.3   0:00.03 gvfsd
+   1237 user      20   0  159292   5256   5256 S   0.0   0.3   0:00.01 gdm-wayland-ses
+   1241 user      20   0  297964  16368  12584 S   0.0   0.8   0:00.04 gnome-session-b
+   1316 user      20   0  380384   7868   5176 S   0.0   0.4   0:00.01 gvfsd-fuse
+   1328 user      20   0   88392   5056   4420 S   0.0   0.3   0:00.00 gcr-ssh-agent
+   1330 user      20   0   88840   4612   4612 S   0.0   0.2   0:00.00 gnome-session-c
+   1331 user      20   0    7836   4592   3944 S   0.0   0.2   0:00.00 ssh-agent
+   1341 user      20   0  593712  18264  13176 S   0.0   0.9   0:00.14 gnome-session-b
+   1359 user      20   0  311212   6824   6608 S   0.0   0.3   0:00.01 at-spi-bus-laun
+   1360 user      20   0 3423692 279196  73868 S   0.0  13.9   2:59.63 gnome-shell
+   1366 user      20   0    9132   4232   3980 S   0.0   0.2   0:00.01 dbus-daemon
+   1406 user      20   0  236712   4804   4748 S   0.0   0.2   0:00.00 xdg-permission-
+   1408 user      20   0  581008  10500  10500 S   0.0   0.5   0:00.08 gnome-shell-cal
+   1417 user      20   0 1024124  32656  18140 S   0.0   1.6   0:00.38 evolution-sourc
+   1430 user      20   0  499116  12072   8544 S   0.0   0.6   0:00.58 gvfs-udisks2-vo
+   1435 user      20   0  312444   8860   6508 S   0.0   0.4   0:00.33 gvfs-afc-volume
+   1444 user      20   0  234324   5792   5616 S   0.0   0.3   0:00.01 gvfs-gphoto2-vo
+   1445 user      20   0  884800  17720  13232 S   0.0   0.9   0:00.17 goa-daemon
+   1449 user      20   0  233368   5772   5436 S   0.0   0.3   0:00.01 gvfs-mtp-volume
+   1452 user      20   0  683532  18788  13612 S   0.0   0.9   0:00.10 evolution-calen
+   1458 user      20   0  233532   5636   5424 S   0.0   0.3   0:00.01 gvfs-goa-volume
+   1467 user      20   0  678272  19528  15440 S   0.0   1.0   0:00.07 evolution-addre
+   1489 user      20   0  312584   9528   6452 S   0.0   0.5   0:00.12 goa-identity-se
+   1497 user      20   0  164332   8688   6420 S   0.0   0.4   0:00.02 at-spi2-registr
+   1498 user      20   0 2452788  23120  14316 S   0.0   1.1   0:00.08 gjs
+   1506 user      20   0    2584    696    696 S   0.0   0.0   0:00.00 sh
+   1507 user      20   0  307344   5648   5420 S   0.0   0.3   0:00.00 gsd-a11y-settin
+   1508 user      20   0  339816  21932  16184 S   0.0   1.1   0:00.15 gsd-color
+   1510 user      20   0  355236  10424   8152 S   0.0   0.5   0:00.02 gsd-datetime
+   1517 user      20   0  382640   6728   6256 S   0.0   0.3   0:00.23 gsd-housekeepin
+   1518 user      20   0  338632  19272  15592 S   0.0   1.0   0:00.12 gsd-keyboard
+   1522 user      20   0  668156  23684  17036 S   0.0   1.2   0:00.24 gsd-media-keys
+   1523 user      20   0  376400  24064  17396 S   0.0   1.2   0:00.18 gsd-power
+   1524 user      20   0  247224  11412   9196 S   0.0   0.6   0:00.02 gsd-print-notif
+   1526 user      20   0  454772   6996   5092 S   0.0   0.3   0:00.01 gsd-rfkill
+   1528 user      20   0  233188   5796   5612 S   0.0   0.3   0:00.00 gsd-screensaver
+   1529 user      20   0  463248  10032   7252 S   0.0   0.5   0:00.02 gsd-sharing
+   1530 user      20   0  385564   4908   4552 S   0.0   0.2   0:00.02 gsd-smartcard
+   1533 user      20   0  319356   9248   6904 S   0.0   0.5   0:00.01 gsd-sound
+   1535 user      20   0  455884   8656   6212 S   0.0   0.4   0:00.01 gsd-usb-protect
+   1536 user      20   0  339320  21884  15628 S   0.0   1.1   0:00.15 gsd-wacom
+   1541 user      20   0  231796   5644   4608 S   0.0   0.3   0:00.04 gsd-disk-utilit
+   1542 user      20   0  386952  11668   6316 S   0.0   0.6   0:02.88 ibus-daemon
+   1551 user      20   0 1064452  47192  29576 S   0.0   2.3   0:00.59 evolution-alarm
+   1553 user      20   0  814164 205324  33032 S   0.0  10.2   0:21.84 gnome-software
+   1630 user      20   0 2452732  23480  14548 S   0.0   1.2   0:00.09 gjs
+   1660 user      20   0  341916  15384  12076 S   0.0   0.8   0:00.02 gsd-printer
+   1685 user      20   0  234204   6196   6196 S   0.0   0.3   0:00.00 ibus-dconf
+   1686 user      20   0  344616  24836  15768 S   0.0   1.2   0:03.41 ibus-extension-
+   1688 user      20   0  234172  10016   5464 S   0.0   0.5   0:00.01 ibus-portal
+   1709 user      20   0  231532  23840  20088 S   0.0   1.2   0:03.27 Xwayland
+   1726 user      20   0  160368   6424   6092 S   0.0   0.3   0:00.86 ibus-engine-sim
+   1735 user      20   0  621572  14508   9636 S   0.0   0.7   0:00.20 xdg-desktop-por
+   1740 user      20   0  534084   8304   6056 S   0.0   0.4   0:00.02 xdg-document-po
+   1749 root      20   0    2488    836    836 S   0.0   0.0   0:00.00 fusermount3
+   1755 user      20   0  377104  22256  13568 S   0.0   1.1   0:00.24 xdg-desktop-por
+   1780 user      20   0  548188  45920  30008 S   0.0   2.3   0:00.27 gsd-xsettings
+   1806 user      20   0  190220  20680  15820 S   0.0   1.0   0:00.12 ibus-x11
+   1811 user      39  19  707616  49904  14440 S   0.0   2.5   0:01.14 tracker-miner-f
+   1824 user      20   0   18700     36      0 S   0.0   0.0   0:00.00 VBoxClient
+   1825 user      20   0  226104  53564   1624 S   0.0   2.7   0:00.30 VBoxClient
+   1845 user      20   0  339764  22680  16372 S   0.0   1.1   0:00.18 xdg-desktop-por
+   1851 user      20   0   18700     24      0 S   0.0   0.0   0:00.00 VBoxClient
+   1852 user      20   0  154588   1320   1236 S   0.0   0.1   0:00.74 VBoxClient
+   2111 user      20   0  159924   6088   5756 S   0.0   0.3   0:00.01 gvfsd-metadata
+   2137 user      20   0  156332   5584   5044 S   0.0   0.3   0:00.01 dconf-service
+  39015 root      20   0  293464   3120   2796 S   0.0   0.2   0:03.44 VBoxService
+  39046 root      20   0  152260   2692   2392 S   0.0   0.1   0:00.00 VBoxService
+  40571 root      20   0   15452   9436   8120 S   0.0   0.5   0:00.01 sshd
+  41285 root      20   0       0      0      0 I   0.0   0.0   0:00.15 kworker/u2:1-flush-8:0
+  41319 root      20   0       0      0      0 I   0.0   0.0   0:01.58 kworker/0:3-mm_percpu_wq
+  41754 root      20   0   17808  10980   9372 S   0.0   0.5   0:00.09 sshd
+  41792 user      20   0    8244   5108   3520 S   0.0   0.3   0:00.02 bash
+  41823 root      20   0   10352    556      0 S   0.0   0.0   0:00.00 sudo
+  41824 root      20   0    8248   5084   3492 S   0.0   0.3   0:00.03 bash
+  41831 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/0:2-ata_sff
+  41849 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-ata_sff
+  41852 root      20   0    7204   3944   3396 S   0.0   0.2   0:00.00 bash
+[7mkill %1[27mkill %1
+[?2004lbash: kill: (41856) - No such process
+[1]+  Done                    top -b -n 5
+[?2004hroot@debian-lesson4:~/codeby-devops/lesson4# [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-05-12 22:23:46+03:00 [COMMAND_EXIT_CODE="1"]

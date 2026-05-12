@@ -1,0 +1,40 @@
+Script started on 2026-05-12 22:41:05+03:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="135" LINES="58"]
+[?2004hroot@debian-lesson4:/opt/java# sudo update[K[7msudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-21/bin/java 2[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-21/bin/java 2
+[?2004lupdate-alternatives: error: alternative path /usr/lib/jvm/jdk-21/bin/java doesn't exist
+[?2004hroot@debian-lesson4:/opt/java# java -version
+[?2004ljava version "21.0.10" 2026-01-20 LTS
+Java(TM) SE Runtime Environment (build 21.0.10+8-LTS-217)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.10+8-LTS-217, mixed mode, sharing)
+[?2004hroot@debian-lesson4:/opt/java# 
+[?2004l[?2004hroot@debian-lesson4:/opt/java# 
+[?2004l[?2004hroot@debian-lesson4:/opt/java# [7msudo update-alternatives --config java[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo update-alternatives --config java
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ka
+[?2004lThere are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                          Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/jdk-21.0.10-oracle-x64/bin/java   352403456 auto mode
+  1            /usr/lib/jvm/java-17-openjdk-amd64/bin/java    1711      manual mode
+  2            /usr/lib/jvm/jdk-21.0.10-oracle-x64/bin/java   352403456 manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/java to provide /usr/bin/java (java) in manual mode
+[?2004hroot@debian-lesson4:/opt/java# sudo update-alternatives --config java
+[?2004lThere are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                          Priority   Status
+------------------------------------------------------------
+  0            /usr/lib/jvm/jdk-21.0.10-oracle-x64/bin/java   352403456 auto mode
+* 1            /usr/lib/jvm/java-17-openjdk-amd64/bin/java    1711      manual mode
+  2            /usr/lib/jvm/jdk-21.0.10-oracle-x64/bin/java   352403456 manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+[?2004hroot@debian-lesson4:/opt/java# java-[K -vr[Kersion
+[?2004lopenjdk version "17.0.19" 2026-04-21
+OpenJDK Runtime Environment (build 17.0.19+10-1-deb12u2-Debian)
+OpenJDK 64-Bit Server VM (build 17.0.19+10-1-deb12u2-Debian, mixed mode, sharing)
+[?2004hroot@debian-lesson4:/opt/java# exit
+[?2004lexit
+
+Script done on 2026-05-12 22:43:34+03:00 [COMMAND_EXIT_CODE="0"]

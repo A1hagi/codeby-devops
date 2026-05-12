@@ -1,0 +1,30 @@
+Script started on 2026-05-12 22:47:13+03:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="135" LINES="58"]
+[?2004hroot@debian-lesson4:~/codeby-devops/lesson4# [7msudo systemctl daemon-reload[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl daemon-reload
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004hroot@debian-lesson4:~/codeby-devops/lesson4# [7msudo systemctl enable --now my-nginx[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl enable --now my-nginx
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCreated symlink /etc/systemd/system/multi-user.target.wants/my-nginx.service → /etc/systemd/system/my-nginx.service.
+[?2004hroot@debian-lesson4:~/codeby-devops/lesson4# [7msudo systemctl status my-nginx[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl status my-nginx
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?1h=[0;1;32m●[0m my-nginx.service - My Custom Nginx Web Server (Lesson 4)[m
+     Loaded: loaded (]8;;file://debian-lesson4/etc/systemd/system/my-nginx.service/etc/systemd/system/my-nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Tue 2026-05-12 22:47:32 MSK; 12s ago[m
+    Process: 43844 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+    Process: 43845 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+   Main PID: 43846 (nginx)[m
+      Tasks: 2[0;38;5;245m (limit: 2293)[0m[m
+     Memory: 1.7M[m
+        CPU: 15ms[m
+     CGroup: /system.slice/my-nginx.service[m
+             ├─[0;38;5;245m43846 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m[m
+             └─[0;38;5;245m43847 "nginx: worker process"[0m[m
+[m
+May 12 22:47:32 debian-lesson4 systemd[1]: Starting my-nginx.service - My Custom Nginx Web Server (Lesson 4)...[m
+May 12 22:47:32 debian-lesson4 systemd[1]: Started my-nginx.service - My Custom Nginx Web Server (Lesson 4).[m
+[K[?1l>[?2004hroot@debian-lesson4:~/codeby-devops/lesson4# [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-05-12 22:47:55+03:00 [COMMAND_EXIT_CODE="0"]
