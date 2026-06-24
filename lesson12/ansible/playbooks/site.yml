@@ -1,0 +1,28 @@
+---
+- name: Configure dev and prod hosts
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Display environment information
+      ansible.builtin.debug:
+        msg: "This host is in {{ env_name }} environment"
+
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: yes
+      when: ansible_os_family == "Debian"
+
+    - name: Install packages wget, htop, nginx
+      ansible.builtin.package:
+        name:
+          - wget
+          - htop
+          - nginx
+        state: present
+
+    - name: Ensure Nginx server is running
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: yes
