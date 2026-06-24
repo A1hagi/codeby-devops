@@ -1,0 +1,60 @@
+Vagrant.configure("2") do |config|
+  # Исполняемый образ для обеих машин
+  config.vm.box = "ubuntu/jammy64"
+
+  # ==========================================
+  # 1. Настройка ВМ "server"
+  # ==========================================
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+    # Приватный IP-адрес сервера
+    server.vm.network "private_network", ip: "192.168.56.10"
+    
+    server.vm.provider "virtualbox" do |v|
+      v.memory = 1024
+      v.cpus = 1
+    end
+
+    # Скрипт базовой настройки и генерации SSH-ключа для root
+    server.vm.provision "shell", inline: <<-SHELL
+      echo "=== Настройка ВМ server ==="
+      # Разрешаем вход по SSH для root (нужно для rsync)
+      sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+      sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+      sudo systemctl restart ssh
+
+      # Генерируем SSH-ключ для root, если его еще нет
+      if [ ! -f /root/.ssh/id_rsa ]; then
+        sudo ssh-keygen -t rsa -N "" -f /root/.ssh/id_rsa
+      fi
+    SHELL
+  end
+
+  # ==========================================
+  # 2. Настройка ВМ "store"
+  # ==========================================
+  config.vm.define "store" do |store|
+    store.vm.hostname = "store"
+    # Приватный IP-адрес хранилища
+    store.vm.network "private_network", ip: "192.168.56.11"
+    
+    store.vm.provider "virtualbox" do |v|
+      v.memory = 1024
+      v.cpus = 1
+    end
+
+    # Скрипт базовой настройки и копирования ключа с server
+    store.vm.provision "shell", inline: <<-SHELL
+      echo "=== Настройка ВМ store ==="
+      sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+      sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+      sudo systemctl restart ssh
+
+      # Создаем директорию для авторизованных ключей root
+      sudo mkdir -p /root/.ssh
+      sudo touch /root/.ssh/authorized_keys
+      sudo chmod 700 /root/.ssh
+      sudo chmod 600 /root/.ssh/authorized_keys
+    SHELL
+  end
+end
