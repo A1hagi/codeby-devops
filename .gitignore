@@ -1,0 +1,14 @@
+# Игнорировать старые уроки в этой ветке
+lesson5/
+lesson6/
+lesson7/
+lesson8/
+*.conf
+*.txt
+*.md
+
+# Игнорировать служебные файлы Vagrant и ключи
+.vagrant/
+lesson9/Vagrant/
+*.pub
+*.key
