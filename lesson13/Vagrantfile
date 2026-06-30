@@ -1,0 +1,24 @@
+Vagrant.configure("2") do |config|
+  
+  # Управляющая машина (Контроллер), где будет работать Ansible
+  config.vm.define "ansible_manager" do |mgr|
+    mgr.vm.box = "ubuntu/focal64"
+    mgr.vm.network "private_network", ip: "192.168.56.10"
+    
+    # Мапим ТЕКУЩУЮ папку урока в виртуалку (внутри она будет доступна как /vagrant)
+    mgr.vm.synced_folder ".", "/vagrant"
+    
+    # Автоматически устанавливаем Ansible при старте, чтобы не делать это руками
+    mgr.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install -y ansible software-properties-common
+    SHELL
+  end
+
+  # Целевая машина CentOS для проверки кроссплатформенности
+  config.vm.define "centos_target" do |centos|
+    centos.vm.box = "almalinux/8" # Современный аналог CentOS
+    centos.vm.network "private_network", ip: "192.168.56.11"
+  end
+
+end

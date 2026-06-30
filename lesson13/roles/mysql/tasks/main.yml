@@ -1,0 +1,31 @@
+---
+- name: Load OS-specific variables
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_os_family }}.yml"
+    - default.yml
+
+- name: Install MySQL packages
+  package:
+    name: "{{ mysql_packages }}"
+    state: present
+
+- name: Start and enable MySQL service
+  service:
+    name: "{{ mysql_service }}"
+    state: started
+    enabled: yes
+- name: Create WordPress database
+  mysql_db:
+    name: wordpress_db
+    state: present
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+
+- name: Create WordPress database user
+  mysql_user:
+    name: wp_user
+    password: wp_password123
+    priv: 'wordpress_db.*:ALL'
+    state: present
+    host: 'localhost'
+    login_unix_socket: /var/run/mysqld/mysqld.sock
