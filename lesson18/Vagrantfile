@@ -1,0 +1,19 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/jammy64"
+
+  # Порт 8083 на хосте будет вести на порт 80 в ВМ (на наш Nginx-прокси)
+  config.vm.network "forwarded_port", guest: 80, host: 8083, auto_correct: true
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+    vb.cpus = 2
+    vb.name = "codeby-compose-environment"
+  end
+
+  # Автоматическая установка Docker и Docker Compose при запуске
+  config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get install -y docker.io docker-compose-v2
+    sudo usermod -aG docker vagrant
+  SHELL
+end
