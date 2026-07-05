@@ -1,0 +1,33 @@
+# Общие настройки хранилища
+storageClassName: "local-storage"
+
+# Параметры MySQL
+mysql:
+  replicaCount: 1
+  image: "mysql:8.0"
+  storageSize: "5Gi"
+  rootPassword: "supersecretrootpassword"
+  database: "wordpress"
+  user: "wordpress"
+  password: "wordpresspassword"
+
+# Параметры WordPress
+wordpress:
+  replicaCount: 1
+  image: "wordpress:latest"
+  storageSize: "5Gi"
+  service:
+    type: NodePort
+    port: 80
+    nodePort: 30080
+  hpa:
+    enabled: true
+    minReplicas: 1
+    maxReplicas: 5
+    targetCPUUtilizationPercentage: 50
+
+# Параметры Ingress
+ingress:
+  enabled: true
+  className: "traefik" # В k3s по умолчанию используется Traefik
+  host: "wordpress.local"
