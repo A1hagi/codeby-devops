@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: diag-tools-pod
+spec:
+  serviceAccountName: diag-sa
+  containers:
+  - name: diag-container
+    image: bitnami/kubectl:latest
+    command: ["/bin/sh", "-c"]
+    args:
+    - "echo '=== Обнаруженные Поды в пространстве имен ==='; kubectl get pods -l app=wordpress; echo '==========================================='"
+  restartPolicy: OnFailure
