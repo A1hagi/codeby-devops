@@ -1,0 +1,8 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-storage
+# Для локальных томов встроенный динамический провайдер отсутствует
+provisioner: kubernetes.io/no-provisioner
+# Ждем, пока определится Pod, чтобы связать PVC с PV на нужном узле
+volumeBindingMode: WaitForFirstConsumer
