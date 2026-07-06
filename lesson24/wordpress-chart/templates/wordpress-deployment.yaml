@@ -1,0 +1,53 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-wordpress-svc
+spec:
+  type: {{ .Values.wordpress.service.type }}
+  ports:
+  - port: {{ .Values.wordpress.service.port }}
+    targetPort: 80
+    {{- if eq .Values.wordpress.service.type "NodePort" }}
+    nodePort: {{ .Values.wordpress.service.nodePort }}
+    {{- end }}
+  selector:
+    app: {{ .Release.Name }}-wordpress
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-wordpress
+spec:
+  replicas: {{ .Values.wordpress.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-wordpress
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-wordpress
+    spec:
+      containers:
+      - name: wordpress
+        image: {{ .Values.wordpress.image }}
+        env:
+        - name: WORDPRESS_DB_HOST
+          value: {{ .Release.Name }}-mysql-svc:3306
+        - name: WORDPRESS_DB_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: {{ .Release.Name }}-mysql-config
+              key: mysql-database
+        - name: WORDPRESS_DB_USER
+          valueFrom:
+            configMapKeyRef:
+              name: {{ .Release.Name }}-mysql-config
+              key: mysql-user
+        - name: WORDPRESS_DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-mysql-secrets
+              key: mysql-password
+        ports:
+        - containerPort: 80
+          name: wordpress
