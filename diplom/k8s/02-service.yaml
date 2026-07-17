@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-webapp-service
+  namespace: default
+spec:
+  type: NodePort # Пробрасывает порт на хостовую машину для доступа из Интернета
+  selector:
+    app: go-webapp
+  ports:
+  - port: 80 # Порт самого сервиса внутри виртуальной сети кластера
+    targetPort: 8080 # Порт контейнера, куда перенаправляется трафик
+    nodePort: 30080 # Внешний порт. Приложение будет доступно по адресу http://64.188.70.233:30080
