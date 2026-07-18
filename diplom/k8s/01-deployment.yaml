@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-webapp
+  namespace: default
+  labels:
+    app: go-webapp
+spec:
+  replicas: 1 # Одна реплика для экономии 2ГБ оперативной памяти вашего сервера
+  selector:
+    matchLabels:
+      app: go-webapp
+  template:
+    metadata:
+      labels:
+        app: go-webapp
+    spec:
+      containers:
+      - name: webapp
+        # Плейсхолдер подставится автоматически на шаге CD пайплайна из GitHub Actions
+        image: DOCKER_IMAGE_PLACEHOLDER 
+        ports:
+        - containerPort: 8080 # Внутренний порт приложения
+        resources:
+          limits: # Жесткие лимиты ресурсов для стабильности ноды K3s
+            memory: "128Mi"
+            cpu: "200m"
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
