@@ -1,0 +1,135 @@
+#!/usr/bin/env groovy
+
+pipeline {
+    agent any // Берем любой доступный агент, как в примерах лекции
+
+    options {
+        parallelsAlwaysFailFast() // Опция со страницы 22 лекции
+    }
+
+    environment {
+        CHANGED_WORLD   = 'false'
+        CHANGED_JENKINS = 'false'
+        CHANGED_DEVOPS  = 'false'
+    }
+
+    stages {
+        stage('Detect Changes') {
+            steps {
+                script {
+                    echo "Анализируем измененные файлы в коммите..."
+                    def changedFiles = sh(script: "git diff-tree --no-commit-id --name-only -r ${env.GIT_COMMIT} || git diff --name-only HEAD~1 HEAD", returnStdout: true).trim().split('\n')
+                    
+                    for (file in changedFiles) {
+                        if (file.startsWith("lesson26/hello-world/")) {
+                            env.CHANGED_WORLD = 'true'
+                        }
+                        if (file.startsWith("lesson26/hello-jenkins/")) {
+                            env.CHANGED_JENKINS = 'true'
+                        }
+                        if (file.startsWith("lesson26/hello-devops/")) {
+                            env.CHANGED_DEVOPS = 'true'
+                        }
+                    }
+                    echo "Статус изменений -> World: ${env.CHANGED_WORLD}, Jenkins: ${env.CHANGED_JENKINS}, DevOps: ${env.CHANGED_DEVOPS}"
+                }
+            }
+        }
+
+        stage('Parallel CI/CD Pipeline') {
+            parallel {
+
+                // --- 1. HELLO WORLD ---
+                stage('Application: Hello World') {
+                    when { expression { env.CHANGED_WORLD == 'true' } }
+                    stages {
+                        stage('Build & Test World') {
+                            steps {
+                                dir('lesson26/hello-world') {
+                                    sh 'mvn clean package'
+                                }
+                            }
+                            post {
+                                always {
+                                    dir('lesson26/hello-world') {
+                                        junit 'target/surefire-reports/*.xml' // Агрегация отчетов из лекции
+                                    }
+                                }
+                            }
+                        }
+                        stage('Deploy World') {
+                            steps {
+                                dir('lesson26/hello-world') {
+                                    sh 'java -jar target/my-app-1.0-SNAPSHOT.jar &'
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // --- 2. HELLO JENKINS ---
+                stage('Application: Hello Jenkins') {
+                    when { expression { env.CHANGED_JENKINS == 'true' } }
+                    stages {
+                        stage('Build & Test Jenkins') {
+                            steps {
+                                dir('lesson26/hello-jenkins') {
+                                    sh 'mvn clean package'
+                                }
+                            }
+                            post {
+                                always {
+                                    dir('lesson26/hello-jenkins') {
+                                        junit 'target/surefire-reports/*.xml'
+                                    }
+                                }
+                            }
+                        }
+                        stage('Deploy Jenkins') {
+                            steps {
+                                dir('lesson26/hello-jenkins') {
+                                    sh 'java -jar target/hello-jenkins-1.0-SNAPSHOT.jar &'
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // --- 3. HELLO DEVOPS ---
+                stage('Application: Hello DevOps') {
+                    when { expression { env.CHANGED_DEVOPS == 'true' } }
+                    stages {
+                        stage('Build & Test DevOps') {
+                            steps {
+                                dir('lesson26/hello-devops') {
+                                    sh 'mvn clean package'
+                                }
+                            }
+                            post {
+                                always {
+                                    dir('lesson26/hello-devops') {
+                                        junit 'target/surefire-reports/*.xml'
+                                    }
+                                }
+                            }
+                        }
+                        stage('Deploy DevOps') {
+                            steps {
+                                dir('lesson26/hello-devops') {
+                                    sh 'java -jar target/hello-devops-1.0-SNAPSHOT.jar &'
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    
+    post {
+        always {
+            cleanWs() // Очистка рабочего пространства после сборки
+        }
+    }
+}
