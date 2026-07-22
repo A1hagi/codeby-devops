@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     echo "Анализируем измененные файлы в коммите..."
-                    def changedFiles = sh(script: "git diff-tree --no-commit-id --name-only -r ${env.GIT_COMMIT} || git diff --name-only HEAD~1 HEAD", returnStdout: true).trim().split('\n')
+                    def changedFiles = sh(script: "git show --name-only --pretty=format: ${env.GIT_COMMIT} || git log -1 --name-only --pretty=format:", returnStdout: true).trim().split('\n')
                     
                     for (file in changedFiles) {
                         if (file.startsWith("lesson26/hello-world/")) {
