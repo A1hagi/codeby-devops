@@ -18,17 +18,23 @@ pipeline {
             steps {
                 script {
                     echo "Анализируем измененные файлы в коммите..."
-                    def changedFiles = sh(script: "git show --name-only --pretty=format: ${env.GIT_COMMIT} || git log -1 --name-only --pretty=format:", returnStdout: true).trim().split('\n')
-                    
-                    for (file in changedFiles) {
-                        if (file.startsWith("lesson26/hello-world/")) {
-                            env.CHANGED_WORLD = 'true'
-                        }
-                        if (file.startsWith("lesson26/hello-jenkins/")) {
-                            env.CHANGED_JENKINS = 'true'
-                        }
-                        if (file.startsWith("lesson26/hello-devops/")) {
-                            env.CHANGED_DEVOPS = 'true'
+                    def changeLogSets = currentBuild.changeSets
+                    for (int i = 0; i < changeLogSets.size(); i++) {
+                        def entries = changeLogSets[i].items
+                        for (int j = 0; j < entries.length; j++) {
+                            def files = entries[j].affectedFiles
+                            for (int k = 0; k < files.size(); k++) {
+                                def file = files[k].path
+                                if (file.contains("hello-world/")) {
+                                    env.CHANGED_WORLD = 'true'
+                                }
+                                if (file.contains("hello-jenkins/")) {
+                                    env.CHANGED_JENKINS = 'true'
+                                }
+                                if (file.contains("hello-devops/")) {
+                                    env.CHANGED_DEVOPS = 'true'
+                                }
+                            }
                         }
                     }
                     echo "Статус изменений -> World: ${env.CHANGED_WORLD}, Jenkins: ${env.CHANGED_JENKINS}, DevOps: ${env.CHANGED_DEVOPS}"
