@@ -1,10 +1,10 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent any // Берем любой доступный агент, как в примерах лекции
+    agent any
 
     options {
-        parallelsAlwaysFailFast() // Опция со страницы 22 лекции
+        parallelsAlwaysFailFast()
     }
 
     environment {
@@ -18,25 +18,24 @@ pipeline {
             steps {
                 script {
                     echo "Анализируем измененные файлы в коммите..."
-                    def changeLogSets = currentBuild.changeSets
-                    for (int i = 0; i < changeLogSets.size(); i++) {
-                        def entries = changeLogSets[i].items
-                        for (int j = 0; j < entries.length; j++) {
-                            def files = entries[j].affectedFiles
-                            for (int k = 0; k < files.size(); k++) {
-                                def file = files[k].path
-                                if (file.contains("hello-world/")) {
-                                    env['CHANGED_WORLD'] = 'true'
-                                }
-                                if (file.contains("hello-jenkins/")) {
-                                    env['CHANGED_JENKINS'] = 'true'
-                                }
-                                if (file.contains("hello-devops/")) {
-                                    env['CHANGED_DEVOPS'] = 'true'
-                                }
-                            }
-                        }
+                    
+                    // Бронебойный метод: пишем список файлов в обычный текстовый файл на диске
+                    sh "git diff-tree --no-commit-id --name-only -r HEAD > changed_files.txt || git show --name-only --pretty=format: HEAD > changed_files.txt"
+                    
+                    // Читаем этот файл стандартным методом Jenkins
+                    def filesText = readFile('changed_files.txt').trim()
+                    echo "Измененные файлы в Git:\n${filesText}"
+                    
+                    if (filesText.contains("hello-world/")) {
+                        env.CHANGED_WORLD = 'true'
                     }
+                    if (filesText.contains("hello-jenkins/")) {
+                        env.CHANGED_JENKINS = 'true'
+                    }
+                    if (filesText.contains("hello-devops/")) {
+                        env.CHANGED_DEVOPS = 'true'
+                    }
+                    
                     echo "Статус изменений -> World: ${env.CHANGED_WORLD}, Jenkins: ${env.CHANGED_JENKINS}, DevOps: ${env.CHANGED_DEVOPS}"
                 }
             }
@@ -58,7 +57,7 @@ pipeline {
                             post {
                                 always {
                                     dir('lesson26/hello-world') {
-                                        junit 'target/surefire-reports/*.xml' // Агрегация отчетов из лекции
+                                        junit 'target/surefire-reports/*.xml'
                                     }
                                 }
                             }
@@ -135,7 +134,7 @@ pipeline {
     
     post {
         always {
-            cleanWs() // Очистка рабочего пространства после сборки
+            cleanWs()
         }
     }
 }
