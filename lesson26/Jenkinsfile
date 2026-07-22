@@ -26,13 +26,13 @@ pipeline {
                             for (int k = 0; k < files.size(); k++) {
                                 def file = files[k].path
                                 if (file.contains("hello-world/")) {
-                                    env.CHANGED_WORLD = 'true'
+                                    env['CHANGED_WORLD'] = 'true'
                                 }
                                 if (file.contains("hello-jenkins/")) {
-                                    env.CHANGED_JENKINS = 'true'
+                                    env['CHANGED_JENKINS'] = 'true'
                                 }
                                 if (file.contains("hello-devops/")) {
-                                    env.CHANGED_DEVOPS = 'true'
+                                    env['CHANGED_DEVOPS'] = 'true'
                                 }
                             }
                         }
